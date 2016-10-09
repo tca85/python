@@ -1,0 +1,31 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/home/tca85/Github/python/.metadata/.plugins/org.eclipse.core.resources/.projects/Testes/com.python.pydev.analysis/v2_indexcache
+pacote.__init__|1475939977000000000|/home/tca85/Github/python/Testes/pacote/__init__.py
+pacote.Teste|1476032443000000000|/home/tca85/Github/python/Testes/pacote/Teste.py
+pacote.Main|1476032455000000000|/home/tca85/Github/python/Testes/pacote/Main.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+3=Teste
+1=pacote.Main
+2=pacote.Teste
+-- END DICTIONARY
+-- START TREE 1
+4
+lis|1|lista!11@
+pal|0|
+s|0|
+tes|2|Teste!17@teste!11@
+-- END TREE
+-- START TREE 2
+8
+cri|1|criarArquivoTextoeEscrever!3&18@
+fat|1|fatorial!3&18@
+med|1|media!3&18@
+mul|1|multiplicar_range_por_dois!3&18@
+nom|1|nome_sistema_operacional!3&18@
+som|1|somar_0_a_99!3&18@
+tam|1|tamanho_palavra!3&18@
+tes|1|testar_resto_igual_zero!3&18@
+-- END TREE

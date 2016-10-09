@@ -1,0 +1,17 @@
+#!/usr/bin/python
+
+'''
+Created on Oct 7, 2016
+
+@author: tca85
+'''
+
+class Pessoa(object):
+
+    # Constructor
+    def __init__(self):
+
+
+        
+    def falar(self, frase):
+        print frase

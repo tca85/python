@@ -14,4 +14,13 @@ from pacote.Teste import Teste
 
 teste = Teste()
 
-teste.testar_resto_igual_zero(teste.multiplicar_range_por_dois(15), 3)
+lista = teste.multiplicar_range_por_dois(15)
+
+teste.testar_resto_igual_zero(lista, 3)
+
+teste.tamanho_palavra('lsdfjfkjsdfkjas')
+
+print teste.media(lista)
+print teste.nome_sistema_operacional()
+
+teste.criarArquivoTextoeEscrever('arquivo_teste')

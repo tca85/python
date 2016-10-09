@@ -1,0 +1,12 @@
+'''
+Created on Oct 5, 2016
+
+@author: tca85
+'''
+import Teste
+
+teste = Teste()
+
+print teste.multiplicar_range_por_dois(5)
+
+teste.falar('fasfsdfasfsd')

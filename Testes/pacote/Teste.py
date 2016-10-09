@@ -10,6 +10,9 @@ como testes da sintaxe, recursos, etc.
 
 @author: tca85
 '''
+import os
+import sys
+
 
 class Teste():
 
@@ -57,3 +60,43 @@ class Teste():
         
         
     #-----------------------------------------------------------------------------------------
+    def tamanho_palavra(self, palavra):
+        print 'Tamanho de %s = %d' % (palavra, len(palavra))
+    
+    #-----------------------------------------------------------------------------------------
+    def media(self, lista):
+        return float(sum(lista) / len(lista))
+    
+    
+    #-----------------------------------------------------------------------------------------
+    def nome_sistema_operacional(self):
+        return os.name
+    
+    #-----------------------------------------------------------------------------------------
+    def criarArquivoTextoeEscrever(self, nomeArquivo):
+        temp = open(nomeArquivo + '.txt', 'w')
+        
+        for i in range(100):
+            temp.write('%03d\n' % i)
+        
+        temp.close()
+        
+        self.lerArquivoTexto(nomeArquivo)
+    
+    #-----------------------------------------------------------------------------------------7
+    def lerArquivoTexto(self, nomeArquivo):
+        temp = open(nomeArquivo + '.txt')
+        
+        for x in temp:
+            sys.stdout.write(x)
+        
+        temp.close
+         
+    #-----------------------------------------------------------------------------------------
+    
+    
+    #-----------------------------------------------------------------------------------------
+    #-----------------------------------------------------------------------------------------
+    
+    
+    

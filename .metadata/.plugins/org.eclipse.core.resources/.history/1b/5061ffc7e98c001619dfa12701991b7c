@@ -1,0 +1,19 @@
+'''
+Created on Oct 5, 2016
+
+@author: tca85
+'''
+import Teste
+
+lista = [1, 2, 3, 4, 5]
+
+for p in lista: 
+    print p * 3
+    
+print 'teste ok'
+
+p = Teste()
+
+print p.multiplicar_range_por_dois(5)
+
+p.falar('fasfsdfasfsd')

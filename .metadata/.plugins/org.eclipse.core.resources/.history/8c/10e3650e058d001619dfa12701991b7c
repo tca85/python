@@ -1,0 +1,16 @@
+#!/usr/bin/python
+# -*- coding: latin1 -*-
+
+'''
+Created on Oct 5, 2016
+
+@author: tca85
+'''
+
+from Teste import Teste
+
+teste = Teste()
+
+lista = teste.multiplicar_range_por_dois(5)
+
+teste.testar_resto_igual_zero(lista, 3)

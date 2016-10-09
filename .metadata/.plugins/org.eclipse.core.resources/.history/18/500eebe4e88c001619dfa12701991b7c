@@ -1,0 +1,26 @@
+'''
+Created on Oct 5, 2016
+
+@author: tca85
+'''
+from Pessoa import Pessoa
+
+
+def multiplicar_range_por_dois(numero):
+    for p in range(numero):
+        print p * 2    
+
+lista = [1, 2, 3, 4, 5]
+
+for p in lista: 
+    print p * 3
+    
+print 'teste ok'
+
+
+print multiplicar_range_por_dois(5)
+
+print "teste com classe"
+
+p = Pessoa()
+p.falar('fasfsdfasfsd')
