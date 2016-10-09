@@ -1,1 +1,8 @@
-DELSTRpacote.Teste
+INSTUPpacote.Arquivo
+/home/tca85/Github/python/Testes/pacote/Arquivo.py
+INFOS:&&1|1|2|0&&2|3|2|1&&2|4|2|1&&2|5|2|1
+Arquivo=1
+criarArquivoTemporario=5
+criarArquivoTextoeEscrever=3
+pacote.Arquivo=2
+mostrarListaArquivoTamanho=4

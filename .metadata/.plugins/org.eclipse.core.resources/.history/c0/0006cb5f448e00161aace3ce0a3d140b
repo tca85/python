@@ -1,0 +1,17 @@
+'''
+Created on Oct 9, 2016
+
+@author: tca85
+'''
+
+class MyClass(object):
+    '''
+    classdocs
+    '''
+
+
+    def __init__(self, params):
+        '''
+        Constructor
+        '''
+        

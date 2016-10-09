@@ -1,14 +1,1 @@
-INSTUPpacote.Teste
-/home/tca85/Github/python/Testes/pacote/Teste.py
-INFOS:&&1|1|2|0&&2|3|2|1&&2|4|2|1&&2|5|2|1&&2|6|2|1&&2|7|2|1&&2|8|2|1&&2|9|2|1&&2|10|2|1&&2|11|2|1
-fatorial=6
-tamanho_palavra=7
-nome_sistema_operacional=9
-criarArquivoTextoeEscrever=10
-testar_resto_igual_zero=4
-somar_0_a_99=5
-media=8
-Teste=1
-multiplicar_range_por_dois=3
-lerArquivoTexto=11
-pacote.Teste=2
+DELSTRpacote.Arquivo

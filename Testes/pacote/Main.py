@@ -11,6 +11,7 @@ Created on Oct 5, 2016
 # mas também segue o seguinte padrão: 
 # from pacote + nome do arquivo import NomeClasse
 from pacote.Teste import Teste
+from pacote.Arquivo import Arquivo
 
 teste = Teste()
 
@@ -23,4 +24,15 @@ teste.tamanho_palavra('lsdfjfkjsdfkjas')
 print teste.media(lista)
 print teste.nome_sistema_operacional()
 
-teste.criarArquivoTextoeEscrever('arquivo_teste')
+#-----------------------------------------------------------------------------
+arquivo = Arquivo()
+
+arquivo.criarArquivoTextoeEscrever('teste')
+arquivo.mostrarListaArquivoTamanho()
+arquivo.criarArquivoTemporario()
+arquivo.gravarTextoArquivoCompactado()
+
+
+
+
+

@@ -1,0 +1,30 @@
+'''
+Created on Oct 9, 2016
+
+@author: tca85
+'''
+import glob
+import os
+
+
+class Arquivo():
+    
+    #-----------------------------------------------------------------------------------------
+    def criarArquivoTextoeEscrever(self, nomeArquivo):
+        temp = open(nomeArquivo + '.txt', 'w')
+        
+        for i in range(100):
+            temp.write('%03d\n' % i)
+        
+        temp.close()
+        
+        print open(nomeArquivo + '.txt').readlines()
+    
+    #-----------------------------------------------------------------------------------------
+    def mostrarListaArquivoTamanho(self):
+        for arq in sorted(glob.glob('*.py')):
+            print arq, os.path.getsize(arq)
+            
+     #-----------------------------------------------------------------------------------------
+     def criarArquivoTemporario(self):
+         
