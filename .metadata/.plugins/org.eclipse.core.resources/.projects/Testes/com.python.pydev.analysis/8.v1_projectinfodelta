@@ -1,8 +1,7 @@
-INSTUPpacote.Arquivo
-/home/tca85/Github/python/Testes/pacote/Arquivo.py
-INFOS:&&1|1|2|0&&2|3|2|1&&2|4|2|1&&2|5|2|1
-Arquivo=1
-criarArquivoTemporario=5
-criarArquivoTextoeEscrever=3
-pacote.Arquivo=2
-mostrarListaArquivoTamanho=4
+INSTUPpacote.Main
+/home/tca85/Github/python/Testes/pacote/Main.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0
+lista=3
+teste=1
+arquivo=4
+pacote.Main=2

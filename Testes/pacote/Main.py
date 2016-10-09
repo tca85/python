@@ -24,6 +24,13 @@ teste.tamanho_palavra('lsdfjfkjsdfkjas')
 print teste.media(lista)
 print teste.nome_sistema_operacional()
 
+teste.exemplo_interpolacao()
+
+print teste.inverter_string('thiago')
+print teste.exemplo_string_template()
+
+teste.exemplo_argumentos('peso', 10, unidade='k')
+
 #-----------------------------------------------------------------------------
 arquivo = Arquivo()
 

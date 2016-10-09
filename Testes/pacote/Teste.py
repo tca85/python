@@ -2,7 +2,7 @@
 # -*- coding: latin1 -*-
 
 '''
-Created on Oct 7, 2016
+Created on Oct 9, 2016
 
 Essa classe contém meus primeiros códigos feitos com Python
 Vai ser utilizada somente para guardar códigos aleatórios
@@ -11,6 +11,8 @@ como testes da sintaxe, recursos, etc.
 @author: tca85
 '''
 import os
+import string
+
 
 class Teste():
 
@@ -70,4 +72,122 @@ class Teste():
     def nome_sistema_operacional(self):
         return os.name
     
-    #-----------------------------------------------------------------------------------------7    
+    #-----------------------------------------------------------------------------------------
+    def exemplo_interpolacao(self):
+        musicos = [('Page', 'guitarrista', 'Led Zeppelin'),
+                   ('Fripp', 'guitarrista', 'XPTO band')]
+        
+        msg = '{0} é {1} do {2}'
+        
+        for nome, funcao, banda in musicos:
+            print(msg.format(nome, funcao, banda))
+        
+        msg = '{saudacao}, são {hora:02d}:{minuto:02d}'
+        
+        print msg.format(saudacao='Bom dia', hora=7, minuto=30)        
+        
+    #-----------------------------------------------------------------------------------------
+    def inverter_string(self, texto):
+        return texto[::-1]
+    
+    
+    #-----------------------------------------------------------------------------------------
+    def exemplo_string_template(self):
+        # string template
+        st = string.Template('$aviso aconteceu em $quando')
+        
+        return st.substitute({'aviso':'falta de eletricidade', 'quando':'02 de Outubro de 2016'})
+        
+        
+    #-----------------------------------------------------------------------------------------
+    def exemplo_listas_mutaveis(self):
+        # Uma nova lista: Brit Progs dos anos 70
+        progs = ['Yes', 'Genesis', 'Pink Floyd', 'ELP']
+
+        # Varrendo a lista inteira
+        for prog in progs:
+            print prog
+
+        # Trocando o último elemento
+        progs[-1] = 'King Crimson'
+
+        # Incluindo
+        progs.append('Camel')
+
+        # Removendo
+        progs.remove('Pink Floyd')
+
+        # Ordena a lista
+        progs.sort()
+
+        # Inverte a lista
+        progs.reverse()
+
+        # Imprime numerado
+        for i, prog in enumerate(progs):
+            print i + 1, '=>', prog
+
+        # Imprime do segundo item em diante
+        print progs[1:]
+        
+    
+    #-----------------------------------------------------------------------------------------
+    def exemplo_sequencias(self):
+        # Conjuntos de dados
+        # set: sequência mutável unívoca (sem repetições) não ordenada.
+        # Quando uma lista é convertida para set, as repetições são descartadas.
+        s1 = set(range(3))
+        s2 = set(range(10, 7, -1))
+        s3 = set(range(2, 10, 2))
+        
+        print 's1:', s1, '\ns2:', s2, '\ns3:', s3
+        
+        s1s2 = s1.union(s2)
+        
+        print 'União de s1 e s2:', s1s2
+        print 'Diferença com s3:', s1s2.difference(s3)
+        print 'Interseção com s3:', s1s2.intersection(s3)
+        
+        if s1.issuperset([1, 2]):
+            print 's1 inclui 1 e 2'
+            
+        if s1.isdisjoint(s2):
+            print 's1 e s2 não tem elementos em comum'
+        
+    #-----------------------------------------------------------------------------------------
+    def exemplo_dicionario(self):
+        dic = {'nome': 'Shirley Manson', 'banda': 'Garbage'}
+        
+        print dic['nome']
+        
+        #adiconando elementos
+        dic['album'] = 'Version 2.0'
+        
+        #apagando elemento
+        del dic['album']
+        
+        itens = dic.items()
+        chaves = dic.keys()
+        valores = dic.values()
+    
+    #-----------------------------------------------------------------------------------------
+    def exemplo_dicionario2(self):
+        cds_metal = {'Metallica': ['Master of Puppets', 'Black'],
+                     'Slayer': ['Season in the Abyss', 'Raining Blood'],
+                     'Cannibal Corpse': ['Live Cannibalism', 'Butchered at Birth']}
+        
+        for cd, albuns in cds_metal.items():
+            print cd, '=> ', albuns
+        
+        if cds_metal.has_key('Slayer'):
+            del cds_metal['Slayer']
+        
+        
+    #-----------------------------------------------------------------------------------------
+    def exemplo_argumentos(self, *args, **kargs):
+        # *args - argumentos sem nome (lista)
+        # **kargs - argumentos com nome (dicionário)    
+        print args
+        print kargs
+    
+    

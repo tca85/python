@@ -2,35 +2,43 @@
 -- START DISKCACHE_2
 /home/tca85/Github/python/.metadata/.plugins/org.eclipse.core.resources/.projects/Testes/com.python.pydev.analysis/v2_indexcache
 pacote.__init__|1475939977000000000|/home/tca85/Github/python/Testes/pacote/__init__.py
-pacote.Main|1476034011000000000|/home/tca85/Github/python/Testes/pacote/Main.py
-pacote.Teste|1476034128000000000|/home/tca85/Github/python/Testes/pacote/Teste.py
+pacote.Main|1476045708000000000|/home/tca85/Github/python/Testes/pacote/Main.py
+pacote.Arquivo|1476047220000000000|/home/tca85/Github/python/Testes/pacote/Arquivo.py
 -- END DISKCACHE
 -- START DICTIONARY
 3
-3=Teste
-1=pacote.Main
-2=pacote.Teste
+3=Arquivo
+2=pacote.Main
+1=pacote.Arquivo
 -- END DICTIONARY
 -- START TREE 1
-6
-arq|1|arquivo!11@
-lis|1|lista!11@
+10
+arq|2|Arquivo!9@arquivo!19@
+lis|1|lista!19@
 myc|0|
 pal|0|
+pro|0|
 s|0|
-tes|2|Teste!17@teste!11@
+s1|0|
+s2|0|
+s3|0|
+tes|1|teste!19@
 -- END TREE
 -- START TREE 2
-11
+15
 __i|0|
-cri|0|
-fat|1|fatorial!3&18@
+cri|2|criarArquivoTemporario!3&10@criarArquivoTextoeEscrever!3&10@
+exe|0|
+fat|0|
+fun|0|
+gra|1|gravarTextoArquivoCompactado!3&10@
+inv|0|
 ler|0|
-med|1|media!3&18@
-mos|0|
-mul|1|multiplicar_range_por_dois!3&18@
-nom|1|nome_sistema_operacional!3&18@
-som|1|somar_0_a_99!3&18@
-tam|1|tamanho_palavra!3&18@
-tes|1|testar_resto_igual_zero!3&18@
+med|0|
+mos|1|mostrarListaArquivoTamanho!3&10@
+mul|0|
+nom|0|
+som|0|
+tam|0|
+tes|0|
 -- END TREE
