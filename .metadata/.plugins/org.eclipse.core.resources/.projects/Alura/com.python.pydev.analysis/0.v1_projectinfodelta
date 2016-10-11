@@ -1,1 +1,9 @@
-DELSTRapp
+INSTUPapp
+/home/tca85/Github/python/Alura/app.py
+INFOS:&&2|1|2|0&&2|3|2|0&&2|4|2|0&&2|5|2|0&&2|6|2|0
+app=2
+listar=3
+remover=4
+menu=6
+alterar=5
+cadastrar=1
