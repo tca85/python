@@ -11,13 +11,6 @@ def cadastrar(nomes):
     nomes.append(nome)
     
 #-----------------------------------------------------------------------------------------
-def listar(nomes):
-    print 'Listando nomes'
-    
-    for nome in nomes:
-        print nome
-    
-#-----------------------------------------------------------------------------------------
 def menu():
     nomes = []
     escolha = ''
@@ -29,7 +22,7 @@ def menu():
         if(escolha == '1'):
             cadastrar(nomes)
         
-        if(escolha == '2'):
+         if(escolha == '2'):
             listar(nomes)
             
 #-----------------------------------------------------------------------------------------

@@ -1,0 +1,16 @@
+'''
+Created on Oct 11, 2016
+
+@author: tca85
+'''
+
+def cadastrar(nomes):
+    print 'Digite: o nome:'
+    nome = raw_input()
+    nomes.append(nome)
+    
+def menu():
+    nomes = []
+    escolha = ''
+    
+    
