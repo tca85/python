@@ -1,0 +1,13 @@
+'''
+Created on Oct 11, 2016
+
+@author: tca85
+'''
+import time
+
+
+class DateTime(object):
+
+    #-----------------------------------------------------------------------------------------
+    def testaClasseTime(self):
+        print time.localtime()

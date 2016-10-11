@@ -2,18 +2,26 @@
 -- START DISKCACHE_2
 /home/tca85/Github/python/.metadata/.plugins/org.eclipse.core.resources/.projects/Testes/com.python.pydev.analysis/v2_indexcache
 pacote.__init__|1475939977000000000|/home/tca85/Github/python/Testes/pacote/__init__.py
-pacote.Main|1476045708000000000|/home/tca85/Github/python/Testes/pacote/Main.py
+pacote.Teste|1476048732000000000|/home/tca85/Github/python/Testes/pacote/Teste.py
+pacote.Main|1476048881000000000|/home/tca85/Github/python/Testes/pacote/Main.py
+pacote.DateTime|1476224135000000000|/home/tca85/Github/python/Testes/pacote/DateTime.py
 pacote.Arquivo|1476047220000000000|/home/tca85/Github/python/Testes/pacote/Arquivo.py
 -- END DISKCACHE
 -- START DICTIONARY
-3
-3=Arquivo
+7
+5=Arquivo
+6=Teste
 2=pacote.Main
+3=pacote.DateTime
+4=pacote.Teste
 1=pacote.Arquivo
+7=DateTime
 -- END DICTIONARY
 -- START TREE 1
-10
+12
 arq|2|Arquivo!9@arquivo!19@
+dat|1|DateTime!25@
+hor|0|
 lis|1|lista!19@
 myc|0|
 pal|0|
@@ -22,23 +30,23 @@ s|0|
 s1|0|
 s2|0|
 s3|0|
-tes|1|teste!19@
+tes|2|Teste!33@teste!19@
 -- END TREE
 -- START TREE 2
 15
 __i|0|
-cri|2|criarArquivoTemporario!3&10@criarArquivoTextoeEscrever!3&10@
-exe|0|
-fat|0|
+cri|2|criarArquivoTemporario!5&10@criarArquivoTextoeEscrever!5&10@
+exe|7|exemplo_interpolacao!6&34@exemplo_argumentos!6&34@exemplo_string_template!6&34@exemplo_listas_mutaveis!6&34@exemplo_dicionario!6&34@exemplo_sequencias!6&34@exemplo_dicionario2!6&34@
+fat|1|fatorial!6&34@
 fun|0|
-gra|1|gravarTextoArquivoCompactado!3&10@
-inv|0|
+gra|1|gravarTextoArquivoCompactado!5&10@
+inv|1|inverter_string!6&34@
 ler|0|
-med|0|
-mos|1|mostrarListaArquivoTamanho!3&10@
-mul|0|
-nom|0|
-som|0|
-tam|0|
-tes|0|
+med|1|media!6&34@
+mos|1|mostrarListaArquivoTamanho!5&10@
+mul|1|multiplicar_range_por_dois!6&34@
+nom|1|nome_sistema_operacional!6&34@
+som|1|somar_0_a_99!6&34@
+tam|1|tamanho_palavra!6&34@
+tes|3|testaClasseDateTime!7&26@testaClasseTime!7&26@testar_resto_igual_zero!6&34@
 -- END TREE

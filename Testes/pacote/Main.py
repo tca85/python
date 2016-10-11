@@ -12,6 +12,7 @@ Created on Oct 5, 2016
 # from pacote + nome do arquivo import NomeClasse
 from pacote.Teste import Teste
 from pacote.Arquivo import Arquivo
+from pacote.DateTime import DateTime
 
 teste = Teste()
 
@@ -40,6 +41,8 @@ arquivo.criarArquivoTemporario()
 arquivo.gravarTextoArquivoCompactado()
 
 
-
+#-----------------------------------------------------------------------------
+datetime = DateTime()
+datetime.testaClasseDateTime()
 
 

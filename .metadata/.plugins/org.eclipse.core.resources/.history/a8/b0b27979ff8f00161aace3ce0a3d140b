@@ -1,0 +1,24 @@
+'''
+Created on Oct 11, 2016
+
+@author: tca85
+'''
+import time
+
+
+class DateTime(object):
+
+    #-----------------------------------------------------------------------------------------
+    def testaClasseTime(self):
+        print time.localtime()
+        
+        print time.asctime()
+        
+        # time() retorna o tempo do sistema em segundos
+        ts1 = time.time()
+        
+        # gmtime() converte segundos para struct_time
+        tt1 = time.gmtime(ts1)
+        print ts1, '->', tt1
+        
+        
