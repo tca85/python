@@ -1,11 +1,11 @@
 #!/usr/bin/python
-# -*- coding: latin1 -*-
+# -*- coding: UTF-8 -*-
 
 '''
 Created on Oct 9, 2016
 
-Essa classe contém meus primeiros códigos feitos com Python
-Vai ser utilizada somente para guardar códigos aleatórios
+Essa classe contÃ©m meus primeiros cÃ³digos feitos com Python
+Vai ser utilizada somente para guardar cÃ³digos aleatÃ³rios
 como testes da sintaxe, recursos, etc.
 
 @author: tca85
@@ -36,7 +36,7 @@ class Teste():
             if i % divisor == 0:
                 print(i, '/3 = ', i / divisor)
             else:
-                print(i, 'nao resta zero na divisao')
+                print(i, 'nÃ£o resta zero na divisÃ£o')
                 
     #-----------------------------------------------------------------------------------------
     def somar_0_a_99(self):
@@ -77,12 +77,12 @@ class Teste():
         musicos = [('Page', 'guitarrista', 'Led Zeppelin'),
                    ('Fripp', 'guitarrista', 'XPTO band')]
         
-        msg = '{0} é {1} do {2}'
+        msg = '{0} ï¿½ {1} do {2}'
         
         for nome, funcao, banda in musicos:
             print(msg.format(nome, funcao, banda))
         
-        msg = '{saudacao}, são {hora:02d}:{minuto:02d}'
+        msg = '{saudacao}, sï¿½o {hora:02d}:{minuto:02d}'
         
         print msg.format(saudacao='Bom dia', hora=7, minuto=30)        
         
@@ -108,7 +108,7 @@ class Teste():
         for prog in progs:
             print prog
 
-        # Trocando o último elemento
+        # Trocando o ï¿½ltimo elemento
         progs[-1] = 'King Crimson'
 
         # Incluindo
@@ -134,8 +134,8 @@ class Teste():
     #-----------------------------------------------------------------------------------------
     def exemplo_sequencias(self):
         # Conjuntos de dados
-        # set: sequência mutável unívoca (sem repetições) não ordenada.
-        # Quando uma lista é convertida para set, as repetições são descartadas.
+        # set: sequï¿½ncia mutï¿½vel unï¿½voca (sem repetiï¿½ï¿½es) nï¿½o ordenada.
+        # Quando uma lista ï¿½ convertida para set, as repetiï¿½ï¿½es sï¿½o descartadas.
         s1 = set(range(3))
         s2 = set(range(10, 7, -1))
         s3 = set(range(2, 10, 2))
@@ -144,15 +144,15 @@ class Teste():
         
         s1s2 = s1.union(s2)
         
-        print 'União de s1 e s2:', s1s2
-        print 'Diferença com s3:', s1s2.difference(s3)
-        print 'Interseção com s3:', s1s2.intersection(s3)
+        print 'Uniï¿½o de s1 e s2:', s1s2
+        print 'Diferenï¿½a com s3:', s1s2.difference(s3)
+        print 'Interseï¿½ï¿½o com s3:', s1s2.intersection(s3)
         
         if s1.issuperset([1, 2]):
             print 's1 inclui 1 e 2'
             
         if s1.isdisjoint(s2):
-            print 's1 e s2 não tem elementos em comum'
+            print 's1 e s2 nï¿½o tem elementos em comum'
         
     #-----------------------------------------------------------------------------------------
     def exemplo_dicionario(self):
@@ -186,7 +186,7 @@ class Teste():
     #-----------------------------------------------------------------------------------------
     def exemplo_argumentos(self, *args, **kargs):
         # *args - argumentos sem nome (lista)
-        # **kargs - argumentos com nome (dicionário)    
+        # **kargs - argumentos com nome (dicionï¿½rio)    
         print args
         print kargs
     

@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: latin1 -*-
+# -*- coding: UTF-8 -*-
 
 '''
 Created on Oct 5, 2016
@@ -7,12 +7,13 @@ Created on Oct 5, 2016
 @author: tca85
 '''
 
-# Para importar a classe È melhor utilizar os atalhos do Eclipse,
-# mas tambÈm segue o seguinte padr„o: 
+# Para importar a classe √© melhor utilizar os atalhos do Eclipse,
+# mas tamb√©m segue o seguinte padr√£o: 
 # from pacote + nome do arquivo import NomeClasse
 from pacote.Teste import Teste
 from pacote.Arquivo import Arquivo
 from pacote.DateTime import DateTime
+from pacote.Cadastro import Cadastro
 
 teste = Teste()
 
@@ -44,5 +45,18 @@ arquivo.gravarTextoArquivoCompactado()
 #-----------------------------------------------------------------------------
 datetime = DateTime()
 datetime.testaClasseDateTime()
+
+
+#-----------------------------------------------------------------------------
+nomes = []
+
+cadastro = Cadastro()
+cadastro.nome(nomes)
+
+print nomes
+
+print cadastro.verificarAnoNascimento()
+
+
 
 

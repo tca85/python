@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: latin1 -*-
+# -*- coding: UTF-8 -*-
 
 '''
 Created on Oct 9, 2016
@@ -35,10 +35,10 @@ class Arquivo():
         temp = os.tmpfile()
         temp.write(texto)
          
-        # volta para o início do arquivo
+        # volta para o inï¿½cio do arquivo
         temp.seek(0)
          
-        # mostra o conteúdo do arquivo
+        # mostra o conteï¿½do do arquivo
         print temp.read()
         
         temp.close()
@@ -54,8 +54,3 @@ class Arquivo():
         zip.close()
         
     #-----------------------------------------------------------------------------------------
-         
-    
-    
-    
-    

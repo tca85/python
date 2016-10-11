@@ -1,0 +1,13 @@
+'''
+Created on Oct 11, 2016
+
+@author: tca85
+'''
+
+class Cadastro():
+    #-----------------------------------------------------------------------------------------
+    def nome(self, nome):
+        print 'Digite o nome:'
+        nome = raw_input()
+         
+          

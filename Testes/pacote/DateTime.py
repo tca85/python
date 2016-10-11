@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: latin1 -*-
+# -*- coding: UTF-8 -*-
 
 '''
 Created on Oct 11, 2016
@@ -36,7 +36,7 @@ class DateTime():
         
         # Contando os segundos...
         for i in xrange(5):
-            # sleep() espera durante o nÃºmero de segundos especificados como parÃ¢metro
+            # sleep() espera durante o número de segundos especificados como parâmetro
             time.sleep(1)
             print i + 1, 'segundo(s)'
             

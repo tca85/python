@@ -1,0 +1,23 @@
+#!/usr/bin/python
+# -*- coding: latin1 -*-
+
+'''
+Created on Oct 11, 2016
+
+@author: tca85
+'''
+
+class Cadastro():
+    #-----------------------------------------------------------------------------------------
+    def nome(self, nomes):
+        print 'Digite o nome:'
+        nome = raw_input()
+        
+        nomes.append(nome)
+
+    #-----------------------------------------------------------------------------------------
+    def verificarIdade(self):
+        # o argumento de entrada é uma string
+        idade = raw_input()
+        
+    #-----------------------------------------------------------------------------------------
