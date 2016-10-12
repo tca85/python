@@ -62,6 +62,7 @@ def procurar(nomes):
     if(nome_a_procurar in nomes):
         print 'O nome', nomes[nomes.index(nome_a_procurar)],  'está na posição', nomes.index(nome_a_procurar)
 
+
 #-----------------------------------------------------------------------------------------
 def menu():
     nomes = []
