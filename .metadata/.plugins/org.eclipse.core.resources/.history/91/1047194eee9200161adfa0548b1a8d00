@@ -1,0 +1,15 @@
+# -*- coding: UTF-8 -*-
+
+'''
+Created on Oct 15, 2016
+
+@author: tca85
+'''
+
+class Pessoa(object):
+
+    def __init__(self, params):
+        '''
+        Constructor
+        '''
+        
