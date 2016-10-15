@@ -1,0 +1,119 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+'''
+Created on Oct 11, 2016
+
+https://cursos.alura.com.br/course/introducao-ao-python
+Curso Python I: Programando com a linguagem
+
+@author: tca85
+'''
+
+import re
+
+#-----------------------------------------------------------------------------------------
+def cadastrar(nomes):
+    print 'Digite: o nome:'
+    nome = raw_input()
+    nomes.append(nome)
+    
+#-----------------------------------------------------------------------------------------
+def listar(nomes):
+    print 'Listando nomes'
+    
+    for nome in nomes:
+        print nome
+
+#-----------------------------------------------------------------------------------------
+def remover(nomes):
+    print 'Qual nome você gostaria de remover?'
+    nome = raw_input()
+    
+    if len(nome) != 0:
+        nomes.remove(nome)
+
+#-----------------------------------------------------------------------------------------
+def alterar(nomes):
+    print 'Qual nome você gostaria de alterar?'
+    nome_inserido = raw_input()
+    
+    for indice, nome in enumerate(nomes):
+        if nome == nome_inserido:
+            print 'Informe o novo nome'
+            nomes[indice] = raw_input()
+        else:
+            print 'Nome não encontrado'
+    
+#-----------------------------------------------------------------------------------------
+def alterar_nomes_solucao2(nomes):
+    print 'Qual nome vc gostaria de alterar?'
+    nome_a_alterar = raw_input()
+        
+    if(nome_a_alterar in nomes):
+        posicao = nomes.index(nome_a_alterar)
+        print 'Digite novo nome:'
+        nome_novo = raw_input()
+        nomes[posicao] = nome_novo
+
+#-----------------------------------------------------------------------------------------
+def procurar(nomes):
+    print 'Digite nome a procurar:'
+    nome_a_procurar = raw_input()
+
+    if(nome_a_procurar in nomes):
+        print 'O nome', nomes[nomes.index(nome_a_procurar)],  'está na posição', nomes.index(nome_a_procurar)
+
+#-----------------------------------------------------------------------------------------
+def expressoes_regulares():
+    resultado = re.match('Py', 'Python')
+    resultado.group()
+    # se não encontrar o valor exato, retorna esse erro:
+    # AttributeError: 'NoneType' object has no attribute 'group'
+    # é possível verificar isso com: type(resultado)
+    
+    # se utilizar a seguinte expressão regular passa a considerar minúsculo e maisculo
+    resultado = re.match('[pP]y', 'Python')
+    
+    # achar todas as sílabas que começam com qualquer letra seguida de y
+    # a função match só encontra a primeira ocorrência
+    resultado = re.match('[A-Za-z]y','Python')
+    
+    # Podemos utilizar no lugar da função match a função findall. Esta função devolve uma lista de resultados:
+    resultados = re.findall('([A-Za-z]y)','Python ou jython')
+    
+    # palavra completa como retorno. Como? O operador + significa um ou mais caracteres
+    resultados = re.findall('([A-Za-z]y[A-Za-z]+)','Python ou jython ou PyPy')
+    
+    # Caso queiramos buscar qualquer caracter, inclusive considerando números, podemos para isso 
+    # podemos usar [A-Za-z0-9] como faixa. Porém, por ser uma necessidade tão comum, 
+    # podemos utilizar o atalho \w
+    # observação: \w não leva em consideração acentos.
+    resultados = re.findall('(\wy\w+)','Python ou jython ou PyPy')
+
+#-----------------------------------------------------------------------------------------
+def menu():
+    nomes = []
+    escolha = ''
+    
+    while (escolha != '0'):
+        print '\n1 - Cadastrar \n2 - Listar \n3 - Remover \n4 - Alterar \n5 - Procurar \n0 - Sair'
+        escolha = raw_input()
+        
+        if(escolha == '1'):
+            cadastrar(nomes)
+        
+        if(escolha == '2'):
+            listar(nomes)
+        
+        if(escolha == '3'):
+            remover(nomes)
+            
+        if(escolha == '4'):
+            alterar(nomes)
+            
+        if(escolha == '5'):
+            procurar(nomes)
+            
+#-----------------------------------------------------------------------------------------
+menu()

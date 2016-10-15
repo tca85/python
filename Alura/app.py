@@ -10,6 +10,8 @@ Curso Python I: Programando com a linguagem
 @author: tca85
 '''
 
+import re
+
 #-----------------------------------------------------------------------------------------
 def cadastrar(nomes):
     print 'Digite: o nome:'
@@ -61,6 +63,39 @@ def procurar(nomes):
 
     if(nome_a_procurar in nomes):
         print 'O nome', nomes[nomes.index(nome_a_procurar)],  'está na posição', nomes.index(nome_a_procurar)
+
+#-----------------------------------------------------------------------------------------
+def expressoes_regulares():
+    resultado = re.match('Py', 'Python')
+    resultado.group()
+    # se não encontrar o valor exato, retorna esse erro:
+    # AttributeError: 'NoneType' object has no attribute 'group'
+    # é possível verificar isso com: type(resultado)
+    
+    # se utilizar a seguinte expressão regular passa a considerar minúsculo e maisculo
+    resultado = re.match('[pP]y', 'Python')
+    
+    # achar todas as sílabas que começam com qualquer letra seguida de y
+    # a função match só encontra a primeira ocorrência
+    resultado = re.match('[A-Za-z]y','Python')
+    
+    # Podemos utilizar no lugar da função match a função findall. Esta função devolve uma lista de resultados:
+    resultados = re.findall('([A-Za-z]y)','Python ou jython')
+    
+    # palavra completa como retorno. Como? O operador + significa um ou mais caracteres
+    resultados = re.findall('([A-Za-z]y[A-Za-z]+)','Python ou jython ou PyPy')
+    
+    # Caso queiramos buscar qualquer caracter, inclusive considerando números, podemos para isso 
+    # podemos usar [A-Za-z0-9] como faixa. Porém, por ser uma necessidade tão comum, 
+    # podemos utilizar o atalho \w
+    # observação: \w não leva em consideração acentos.
+    resultados = re.findall('(\wy\w+)','Python ou jython ou PyPy')
+    
+    # Caso o número seja opcional podemos usar o operador ? que significa zero ou um. 
+    # Se quisermos zero ou mais números no final podemos usar o asterisco *
+    # a expressão [A-Za-z]+\d? pega qualquer palavra com as letra de A-Z independente 
+    # de minuscula ou maiúscula contendo opcionalmente um número:
+    resultados = re.findall('[A-Za-z]+\d?','Python3 ou jython ou PyPy44')
 
 #-----------------------------------------------------------------------------------------
 def menu():
