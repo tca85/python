@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;Alura/app&apos;" deleteContents="false" description="Delete resource &apos;Alura/app&apos;" element1="/Alura/app" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1476227895973"/>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Alura/app&apos;" deleteContents="false" description="Delete resource &apos;Alura/app&apos;" element1="/Alura/app" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1476227895973"/>&#x0A;<refactoring comment="Delete resource &apos;Alura/models/Data.py&apos;" deleteContents="false" description="Delete resource &apos;Alura/models/Data.py&apos;" element1="/Alura/models/Data.py" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1476560749999"/>
 </session>
