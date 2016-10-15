@@ -14,7 +14,5 @@ perfil1.imprimir()
 # também é possível utilizar parâmetros nomeados
 perfil = Perfil(empresa='Aché Laboratórios Farmacêuticos', telefone='xxx xxx xxxx', nome='Thiago em 2015')
 
-# a função type e a propriedade class retornam agora um mesmo valor, o nome da classe
-# essa é uma das diferenças entre o old style e o new style
 print type(perfil)
 print perfil.__class__
