@@ -108,6 +108,7 @@ def expressoes_regulares():
     resultado = re.match(r'^#','#comentarios começam com tralha')
     resultado = re.match(r'.*br$','http://alura.com.br')
     
+    
 #-----------------------------------------------------------------------------------------
 def menu():
     nomes = []

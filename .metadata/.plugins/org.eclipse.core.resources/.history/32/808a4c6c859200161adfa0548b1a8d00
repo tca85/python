@@ -106,7 +106,7 @@ def expressoes_regulares():
     resultados = re.findall(r'[fF]\w{6}','Nico Flavio Fabiana Romulo')
     
     resultado = re.match(r'^#','#comentarios começam com tralha')
-    resultado = re.match(r'.*br$','http://alura.com.br')
+    
     
 #-----------------------------------------------------------------------------------------
 def menu():

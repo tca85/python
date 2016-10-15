@@ -105,8 +105,6 @@ def expressoes_regulares():
     # para buscar nomes entre 6 e 20 caracteres basta colocar: r'[fF]\w{6,20}'
     resultados = re.findall(r'[fF]\w{6}','Nico Flavio Fabiana Romulo')
     
-    resultado = re.match(r'^#','#comentarios começam com tralha')
-    resultado = re.match(r'.*br$','http://alura.com.br')
     
 #-----------------------------------------------------------------------------------------
 def menu():

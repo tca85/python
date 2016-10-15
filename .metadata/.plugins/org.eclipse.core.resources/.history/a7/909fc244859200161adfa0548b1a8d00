@@ -100,13 +100,10 @@ def expressoes_regulares():
     # Alguns dos caracteres possuem um significado especial dentro de uma string 
     # e pode ocorrer um conflito entre a definição da string e a expressão regular
     # Para fugir desses problemas devemos usar uma string crua, ou em inglês raw string.
-    
     # a expressão seguinte pega todos os nomes que começam com F e possuem mais de 6 caracteres: r'[fF]\w{6}'
     # para buscar nomes entre 6 e 20 caracteres basta colocar: r'[fF]\w{6,20}'
     resultados = re.findall(r'[fF]\w{6}','Nico Flavio Fabiana Romulo')
     
-    resultado = re.match(r'^#','#comentarios começam com tralha')
-    resultado = re.match(r'.*br$','http://alura.com.br')
     
 #-----------------------------------------------------------------------------------------
 def menu():
