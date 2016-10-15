@@ -1,0 +1,12 @@
+# -*- coding: UTF-8 -*-
+
+'''
+Created on Oct 15, 2016
+
+@author: tca85
+'''
+
+import Perfil
+
+perfil = Perfil()
+

@@ -1,0 +1,14 @@
+# -*- coding: UTF-8 -*-
+
+'''
+Created on Oct 15, 2016
+
+@author: tca85
+'''
+
+from models.Perfil import Perfil
+
+perfil1 = Perfil('Thiago Cordeiro Alves', '+1 647 455 xxxx', 'SAP Labs Toronto')
+perfil1.imprimir()
+
+perfil = Perfil(empresa='Aché Laboratórios Farmacêuticos', telefone='xxx xxx xxxx', nome='Fulaninho Ciclano')

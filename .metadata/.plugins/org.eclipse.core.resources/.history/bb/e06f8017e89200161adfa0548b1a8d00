@@ -1,0 +1,20 @@
+'''
+Created on Oct 15, 2016
+
+Toda classe que recebe "object" como argumento é uma classe nova
+
+@author: tca85
+'''
+
+class Perfil(object):
+
+
+    #-----------------------------------------------------------------------------------------
+    def __init__(self, params):
+        '''
+        Método construtor. Obrigatoriamente precisa receber "self" (utilizado como convenção)
+        
+        '''
+        
+    #-----------------------------------------------------------------------------------------
+        
