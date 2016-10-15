@@ -30,11 +30,3 @@ class Perfil(object):
     #-----------------------------------------------------------------------------------------
     def imprimir(self):
         print 'Nome : %s, Telefone: %s, Empresa: %s' % (self.nome, self.telefone, self.empresa)
-        
-    #-----------------------------------------------------------------------------------------
-    def curtir(self):
-        self.__curtidas += 1
-        
-    #-----------------------------------------------------------------------------------------
-    def obter_curtidas(self):
-        return self.__curtidas    

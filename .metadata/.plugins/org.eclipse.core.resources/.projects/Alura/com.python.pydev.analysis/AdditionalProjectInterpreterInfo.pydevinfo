@@ -2,52 +2,53 @@
 -- START DISKCACHE_2
 /home/tca85/Github/python/.metadata/.plugins/org.eclipse.core.resources/.projects/Alura/com.python.pydev.analysis/v2_indexcache
 app|1476501577000000000|/home/tca85/Github/python/Alura/app.py
-models.Pessoa|1476546363000000000|/home/tca85/Github/python/Alura/models/Pessoa.py
+models.Pessoa|1476546667000000000|/home/tca85/Github/python/Alura/models/Pessoa.py
 models.__init__|1476544253000000000|/home/tca85/Github/python/Alura/models/__init__.py
-TestarPerfil|1476545983000000000|/home/tca85/Github/python/Alura/TestarPerfil.py
-models.Perfil|1476544506000000000|/home/tca85/Github/python/Alura/models/Perfil.py
+models.Perfil|1476547793000000000|/home/tca85/Github/python/Alura/models/Perfil.py
 models.Data|1476546016000000000|/home/tca85/Github/python/Alura/models/Data.py
 -- END DISKCACHE
 -- START DICTIONARY
-11
+10
 1=app
-11=Perfil.__init__
+5=Perfil.__init__
 8=Perfil
-5=models.Pessoa
+4=models.Pessoa
 9=Pessoa.__init__
-2=TestarPerfil
 7=Data
-4=models.Perfil
+3=models.Perfil
 10=Data.__init__
-3=models.Data
+2=models.Data
 6=Pessoa
 -- END DICTIONARY
 -- START TREE 1
 13
 alt|2|alterar_nomes_solucao2!10@alterar!10@
 cad|1|cadastrar!10@
-d|1|d!19@
-dat|1|Data!25@
+d|0|
+dat|1|Data!17@
 exp|1|expressoes_regulares!10@
 lis|1|listar!10@
 men|1|menu!10@
 myc|0|
-out|1|outro!19@
-per|3|Perfil!33@perfil1!19@perfil!19@
-pes|1|Pessoa!41@
+out|0|
+per|1|Perfil!25@
+pes|1|Pessoa!33@
 pro|2|procurar_regex!10@procurar!10@
 rem|1|remover!10@
 -- END TREE
 -- START TREE 2
-10
-__i|3|__init__!6&42@__init__!7&26@__init__!8&34@
-alt|1|altura!9&43@
-ano|1|ano!10&27@
-dia|1|dia!10&27@
-emp|1|empresa!11&35@
-imp|3|imprime_imc!6&42@imprime!7&26@imprimir!8&34@
-mes|1|mes!10&27@
-nom|2|nome!9&43@nome!11&35@
-pes|1|peso!9&43@
-tel|1|telefone!11&35@
+13
+__c|1|__curtidas!5&27@
+__i|3|__init__!6&34@__init__!7&18@__init__!8&26@
+alt|1|altura!9&35@
+ano|1|ano!10&19@
+cur|1|curtir!8&26@
+dia|1|dia!10&19@
+emp|1|empresa!5&27@
+imp|3|imprime_imc!6&34@imprime!7&18@imprimir!8&26@
+mes|1|mes!10&19@
+nom|2|nome!9&35@nome!5&27@
+obt|1|obter_curtidas!8&26@
+pes|1|peso!9&35@
+tel|1|telefone!5&27@
 -- END TREE

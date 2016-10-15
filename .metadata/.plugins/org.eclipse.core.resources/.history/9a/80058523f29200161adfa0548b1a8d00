@@ -21,7 +21,7 @@ print outro.nome
 perfil1.curtir()
 perfil1.curtir()
 perfil1.curtir()
-print perfil1.obter_curtidas()
+
 
 # também é possível utilizar parâmetros nomeados
 perfil2 = Perfil(empresa='Aché Laboratórios Farmacêuticos', telefone='xxx xxx xxxx', nome='Thiago em 2015')

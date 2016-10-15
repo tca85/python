@@ -36,5 +36,4 @@ class Perfil(object):
         self.__curtidas += 1
         
     #-----------------------------------------------------------------------------------------
-    def obter_curtidas(self):
-        return self.__curtidas    
+    

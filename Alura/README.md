@@ -3,8 +3,16 @@
 https://cursos.alura.com.br/course/introducao-ao-python
 
 - Introdução
-- Lista
+- Trabalhando com listas
 - Tuples e dictionary
 - Funções
-- Cadastrando Perfis
-- Lógica da aplicação em app.py
+- Cadastrando perfis
+- Organizando melhor nosso código
+- Expressão regulares
+- Orientação a objetos e o conceito de classe
+- Encapsulamento
+- Reaproveitando código através de Herança
+- Escrita e leitura de arquivos
+- Métodos estáticos
+- Tratamento de exceções
+

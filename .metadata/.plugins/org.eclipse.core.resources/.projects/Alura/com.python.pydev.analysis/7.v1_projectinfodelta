@@ -1,11 +1,1 @@
-INSTUPmodels.Pessoa
-/home/tca85/Github/python/Alura/models/Pessoa.py
-INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&3|6|2|5&&3|7|2|5&&2|8|2|1
-peso=6
-altura=7
-models.Pessoa=2
-Pessoa.__init__=5
-imprime_imc=8
-nome=4
-__init__=3
-Pessoa=1
+DELSTRTestarPerfil
