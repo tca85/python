@@ -1,0 +1,11 @@
+INSTUPmodels.Data
+/home/tca85/Github/python/Alura/models/Data.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&3|6|2|5&&3|7|2|5&&2|8|2|1
+ano=7
+Data=1
+mes=6
+imprimir=8
+__init__=3
+dia=4
+Data.__init__=5
+models.Data=2

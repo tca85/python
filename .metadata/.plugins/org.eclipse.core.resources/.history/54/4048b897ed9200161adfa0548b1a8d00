@@ -24,5 +24,4 @@ perfil = Perfil(empresa='Aché Laboratórios Farmacêuticos', telefone='xxx xxx 
 print type(perfil)
 print perfil.__class__
 
-d = Data(21, 11, 2007)
-d.imprime()
+data = Data()

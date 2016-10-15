@@ -1,0 +1,17 @@
+'''
+Created on Oct 15, 2016
+
+@author: tca85
+'''
+
+class Data(object):
+    '''
+    classdocs
+    '''
+
+
+    def __init__(self, params):
+        '''
+        Constructor
+        '''
+        

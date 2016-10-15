@@ -1,0 +1,19 @@
+'''
+Created on Oct 15, 2016
+
+@author: tca85
+'''
+from gtk.keysyms import diaeresis
+
+class Data(object):
+    '''
+    classdocs
+    '''
+
+
+    def __init__(self, dia, mes, ano):
+        self.dia = dia
+        self.mes = mes
+        self.ano = ano
+    
+        
