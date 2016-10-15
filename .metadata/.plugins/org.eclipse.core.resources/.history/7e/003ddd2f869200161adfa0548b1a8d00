@@ -107,15 +107,7 @@ def expressoes_regulares():
     
     resultado = re.match(r'^#','#comentarios começam com tralha')
     resultado = re.match(r'.*br$','http://alura.com.br')
-
-#-----------------------------------------------------------------------------------------
-def procurar_regex(nomes):
-    print('Digite a expressão regular')
-    regex = raw_input()
-    nomes_concatenados = ' '.join(nomes)
-    resultados = re.findall(regex, nomes_concatenados)
-    print(resultados)
-
+    
 #-----------------------------------------------------------------------------------------
 def menu():
     nomes = []
