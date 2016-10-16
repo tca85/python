@@ -3825,3 +3825,12 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 
 !ENTRY org.python.pydev.shared_core 4 4 2016-10-16 19:13:47.880
 !MESSAGE Info: Rebuilding internal caches: /home/tca85/Github/python/.metadata/.plugins/org.eclipse.core.resources/.projects/Programando-com-Python2.7/com.python.pydev.analysis/AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2016-10-16 19:15:45.103
+!MESSAGE Info: Rebuilding internal caches: /home/tca85/Github/python/.metadata/.plugins/org.eclipse.core.resources/.projects/design-patterns/com.python.pydev.analysis/AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2016-10-16 19:18:26.748
+!MESSAGE Info: Rebuilding internal caches: /home/tca85/Github/python/.metadata/.plugins/org.eclipse.core.resources/.projects/programando-com-python2.7/com.python.pydev.analysis/AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2016-10-16 19:18:26.788
+!MESSAGE Info: Rebuilding internal caches: /home/tca85/Github/python/.metadata/.plugins/org.eclipse.core.resources/.projects/testes/com.python.pydev.analysis/AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
