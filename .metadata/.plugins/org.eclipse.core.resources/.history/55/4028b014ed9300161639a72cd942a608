@@ -23,7 +23,7 @@ class Perfil(object):
         '''
         
         if(len(nome) < 3):
-            raise ArgumentoInvalidoError('O nome deve ter pelo menos 3 caracteres')
+            raise ValueError('O nome deve ter pelo menos 3 caracteres')
         
         # atributos de instância
         self.nome = nome
@@ -97,8 +97,7 @@ class ArgumentoInvalidoError(Exception):
         self.mensagem = mensagem
         
     def __str__(self):
-        return repr(self.mensagem)
-
+        
 
 
 
