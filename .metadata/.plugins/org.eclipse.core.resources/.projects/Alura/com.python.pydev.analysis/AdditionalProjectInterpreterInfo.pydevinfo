@@ -2,28 +2,23 @@
 -- START DISKCACHE_2
 /home/tca85/Github/python/.metadata/.plugins/org.eclipse.core.resources/.projects/Alura/com.python.pydev.analysis/v2_indexcache
 app|1476501577000000000|/home/tca85/Github/python/Alura/app.py
-TestarModulos|1476650250000000000|/home/tca85/Github/python/Alura/TestarModulos.py
+TestarModulos|1476657578000000000|/home/tca85/Github/python/Alura/TestarModulos.py
 modulo_exercicios|1476646825000000000|/home/tca85/Github/python/Alura/modulo_exercicios.py
-modulo|1476655626000000000|/home/tca85/Github/python/Alura/modulo.py
 -- END DISKCACHE
 -- START DICTIONARY
-12
+7
 1=app
-5=Perfil.__init__
-6=Perfil
 2=TestarModulos
-10=Pessoa.__init__
-12=PerfilVIP.__init__
+6=Pessoa.__init__
 3=modulo_exercicios
-7=PerfilVIP
-9=Data
-4=modulo
-11=Data.__init__
-8=Pessoa
+5=Data
+7=Data.__init__
+4=Pessoa
 -- END DICTIONARY
 -- START TREE 1
-13
+14
 alt|2|alterar_nomes_solucao2!10@alterar!10@
+arg|0|
 cad|1|cadastrar!10@
 d|1|d!19@
 dat|1|Data!25@
@@ -31,27 +26,29 @@ exp|1|expressoes_regulares!10@
 lis|1|listar!10@
 men|1|menu!10@
 out|1|outro!19@
-per|6|perfis!19@perfil!19@perfis_vip!19@perfil2!19@PerfilVIP!33@Perfil!33@
-pes|2|pessoa!19@Pessoa!25@
+per|4|perfis!19@perfil!19@perfis_vip!19@perfil2!19@
+pes|2|Pessoa!25@pessoa!19@
 pro|2|procurar_regex!10@procurar!10@
 rem|1|remover!10@
 vip|1|vip!19@
 -- END TREE
 -- START TREE 2
-15
-__c|1|__curtidas!5&35@
-__i|4|__init__!6&34@__init__!7&34@__init__!8&26@__init__!9&26@
-alt|1|altura!10&27@
-ano|1|ano!11&27@
-ape|1|apelido!12&35@
-cur|1|curtir!6&34@
-dia|1|dia!11&27@
-emp|1|empresa!5&35@
-ger|1|gerar_perfis!6&34@
-imp|3|imprime_imc!8&26@imprime!9&26@imprimir!6&34@
-mes|1|mes!11&27@
-nom|2|nome!10&27@nome!5&35@
-obt|2|obter_creditos!7&34@obter_curtidas!6&34@
-pes|1|peso!10&27@
-tel|1|telefone!5&35@
+17
+__c|0|
+__i|2|__init__!4&26@__init__!5&26@
+__s|0|
+alt|1|altura!6&27@
+ano|1|ano!7&27@
+ape|0|
+cur|0|
+dia|1|dia!7&27@
+emp|0|
+ger|0|
+imp|2|imprime_imc!4&26@imprime!5&26@
+men|0|
+mes|1|mes!7&27@
+nom|1|nome!6&27@
+obt|0|
+pes|1|peso!6&27@
+tel|0|
 -- END TREE

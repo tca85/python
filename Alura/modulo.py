@@ -10,6 +10,7 @@ obs: o arquivo "módulo.py" pode ter inúmeras classes
 
 @author: tca85
 '''
+from mercurial.templater import if_
 
 #============================================================================================
 class Perfil(object):
@@ -57,19 +58,20 @@ class Perfil(object):
     '''
     @classmethod
     def gerar_perfis(classe, nome_arquivo):
-        arquivo = open(nome_arquivo, 'r')
+        
         perfis = []
         
-        for linha in arquivo:
-            valores = linha.split(',')
-            
-            if(len(valores) is not 3):
-                raise ValueError('Uma linha no arquivo %s deve ter 3 valores' % nome_arquivo)
-            
-            # instancia a classe e passa a lista para o construtor
-            perfis.append(classe(*valores))
-            
-        arquivo.close()
+        with open("perfis.csv") as arquivo:
+            for linha in arquivo:
+                elementos = linha.split(',')
+
+                if(len(elementos) is not 3):
+                    print 'Quantidade de elementos %d %s' % (len(elementos), elementos)
+                    raise ValueError('Uma linha no arquivo %s deve ter 3 valores' % nome_arquivo)
+                
+                # instancia a classe e passa a lista para o construtor
+                perfis.append(classe(*elementos))
+                
         return perfis
     
 #============================================================================================
@@ -98,7 +100,3 @@ class ArgumentoInvalidoError(Exception):
         
     def __str__(self):
         return repr(self.mensagem)
-
-
-
-

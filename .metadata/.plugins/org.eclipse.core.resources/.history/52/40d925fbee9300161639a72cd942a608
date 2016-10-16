@@ -1,0 +1,117 @@
+# -*- coding: UTF-8 -*-
+
+'''
+Curso Python I: Programando com a linguagem
+https://cursos.alura.com.br/course/introducao-ao-python
+Python 2.7
+
+Toda classe que recebe "object" como argumento é uma classe nova
+obs: o arquivo "módulo.py" pode ter inúmeras classes
+
+@author: tca85
+'''
+from mercurial.templater import if_
+
+#============================================================================================
+class Perfil(object):
+    'Classe padrão para perfis de usuários'
+
+    #-----------------------------------------------------------------------------------------
+    def __init__(self, nome, telefone, empresa):
+        '''
+        o método construtor precisa ter o nome __init__ e também receber "self" (utilizado como convenção)
+        self é uma referência ao objeto que criamos a partir da classe
+        '''
+        
+        if(len(nome) < 3):
+            raise ArgumentoInvalidoError('O nome deve ter pelo menos 3 caracteres')
+        
+        # atributos de instância
+        self.nome = nome
+        self.telefone = telefone
+        self.empresa = empresa
+        
+        # para indicarmos que determinado atributo (também pode ser feito com método) 
+        # da classe não deve ser publico que é através do prefixo __ em sua declaração.
+        self.__curtidas = 0
+        
+    #-----------------------------------------------------------------------------------------
+    def imprimir(self):
+        print 'Nome : %s, Telefone: %s, Empresa: %s' % (self.nome, self.telefone, self.empresa)
+        
+    #-----------------------------------------------------------------------------------------
+    def curtir(self):
+        self.__curtidas += 1
+        
+    #-----------------------------------------------------------------------------------------
+    def obter_curtidas(self):
+        return self.__curtidas
+    
+    #-----------------------------------------------------------------------------------------
+    '''
+     Para usar o método devemos criar um novo perfil e isso não faz sentido. Qual a solução?
+     Tornar esse método estático configurando o método para utilizar o decorador @staticmethod
+     Qual o problema dessa solução? Nunca vai criar uma instância do tipo PerfilVIP.
+     Devemos utilizar o decorador @classmethod que recebe sempre a classe que está sendo 
+     utilizada como primeiro parâmetro:
+    
+    '''
+    @classmethod
+    def gerar_perfis(classe, nome_arquivo):
+        
+        arquivo = None
+        perfis = []
+        
+        try:
+            arquivo = open(nome_arquivo, 'r')
+            
+            valores = arquivo.readline().split(',')
+            
+            for linha in arquivo:
+                valores = linha.split(',')
+            
+                if(len(valores) is not 3):
+                    raise ValueError('Uma linha no arquivo %s deve ter 3 valores' % nome_arquivo)
+            
+                # instancia a classe e passa a lista para o construtor
+                perfis.append(classe(*valores))
+                
+        except(IOError, TypeError) as erro:
+            print('Erro %s' % erro)
+            
+        finally:
+            if (arquivo is not None):
+                arquivo.close()
+            
+            return perfis
+    
+#============================================================================================
+class PerfilVIP(Perfil):
+    
+    #-----------------------------------------------------------------------------------------
+    def __init__(self, nome, telefone, empresa, apelido=''):
+        
+        # Recebe um atributo a mais, "apelido", e mantém o comportamento da classe pai
+        # utilizando o super
+        super(PerfilVIP, self).__init__(nome, telefone, empresa)
+        self.apelido = apelido
+    #-----------------------------------------------------------------------------------------
+    def obter_creditos(self):
+        
+        # Para acessar o self de uma classe pai a partir de sua filha, utilizamos a função/método super
+        # recebe como primeiro parâmetro o nome da classe filha e como segundo parâmetro seu self
+        # caso contrário, não seria possível acessar o atributo __curtidas da classe pai
+        return super(PerfilVIP, self).obter_curtidas() * 10.0    
+    #-----------------------------------------------------------------------------------------
+    
+#============================================================================================
+class ArgumentoInvalidoError(Exception):
+    def __init__(self, mensagem):
+        self.mensagem = mensagem
+        
+    def __str__(self):
+        return repr(self.mensagem)
+
+
+
+
