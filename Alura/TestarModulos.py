@@ -10,8 +10,8 @@ Python 2.7
 @author: tca85
 '''
 
-from models.modulo import Perfil, PerfilVIP
-from models.modulo_exercicios import Data, Pessoa
+from modulo import Perfil, PerfilVIP
+from modulo_exercicios import Data, Pessoa
 
 
 #-----------------------------------------------------------------------------------------
@@ -51,5 +51,12 @@ vip.curtir()
 vip.curtir()
 vip.curtir()
 print vip.obter_creditos()
+
+#-----------------------------------------------------------------------------------------
+perfis = Perfil.gerar_perfis("perfis.csv")
+print type(perfis[0])
+
+perfis_vip = PerfilVIP.gerar_perfis("perfis.csv")
+print type(perfis_vip[0])
 
 #-----------------------------------------------------------------------------------------
