@@ -59,8 +59,6 @@ class Perfil(object):
         
         for linha in arquivo:
             valores = linha.split(',')
-            
-            # instancia a classe e passa a lista para o construtor
             perfis.append(classe(*valores))
             
         arquivo.close()
