@@ -3,13 +3,18 @@
 '''
 Created on Oct 15, 2016
 
+Curso Python I: Programando com a linguagem
+https://cursos.alura.com.br/course/introducao-ao-python
+Python 2.7
+
 @author: tca85
 '''
 
-from models.modulo import Perfil
+from models.modulo import Perfil, PerfilVIP
 from models.modulo_exercicios import Data, Pessoa
 
 
+#-----------------------------------------------------------------------------------------
 perfil = Perfil('Thiago Cordeiro Alves', '+1 647 455 xxxx', 'SAP Labs Toronto')
 perfil.imprimir()
 
@@ -21,6 +26,7 @@ perfil.curtir()
 perfil.curtir()
 perfil.curtir()
 print perfil.obter_curtidas()
+#-----------------------------------------------------------------------------------------
 
 # também é possível utilizar parâmetros nomeados
 perfil2 = Perfil(empresa='Aché Laboratórios Farmacêuticos', telefone='xxx xxx xxxx', nome='Thiago em 2015')
@@ -30,8 +36,20 @@ perfil2 = Perfil(empresa='Aché Laboratórios Farmacêuticos', telefone='xxx xxx
 print type(perfil2)
 print perfil2.__class__
 
+#-----------------------------------------------------------------------------------------
 d = Data(21, 11, 2007)
 d.imprime()
+#-----------------------------------------------------------------------------------------
 
 pessoa = Pessoa("Ronaldo", 105, 1.78)
-pessoa.imprime_imc() 
+pessoa.imprime_imc()
+#-----------------------------------------------------------------------------------------
+
+vip = PerfilVIP('Thiago Cordeiro Alves', '+1 647 455 xxxx', 'SAP Labs Toronto')
+
+vip.curtir()
+vip.curtir()
+vip.curtir()
+print vip.obter_creditos()
+
+#-----------------------------------------------------------------------------------------

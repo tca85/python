@@ -2,52 +2,49 @@
 -- START DISKCACHE_2
 /home/tca85/Github/python/.metadata/.plugins/org.eclipse.core.resources/.projects/Alura/com.python.pydev.analysis/v2_indexcache
 app|1476501577000000000|/home/tca85/Github/python/Alura/app.py
+TestarModulos|1476646732000000000|/home/tca85/Github/python/Alura/TestarModulos.py
 models.__init__|1476544253000000000|/home/tca85/Github/python/Alura/models/__init__.py
-models.modulo|1476560691000000000|/home/tca85/Github/python/Alura/models/modulo.py
 models.modulo_exercicios|1476560737000000000|/home/tca85/Github/python/Alura/models/modulo_exercicios.py
 -- END DISKCACHE
 -- START DICTIONARY
-9
+7
 1=app
-4=Perfil.__init__
-5=Perfil
-8=Pessoa.__init__
-3=models.modulo
-7=Data
-2=models.modulo_exercicios
-9=Data.__init__
-6=Pessoa
+2=TestarModulos
+6=Pessoa.__init__
+5=Data
+3=models.modulo_exercicios
+7=Data.__init__
+4=Pessoa
 -- END DICTIONARY
 -- START TREE 1
 13
 alt|2|alterar_nomes_solucao2!10@alterar!10@
 cad|1|cadastrar!10@
-d|0|
-dat|1|Data!17@
+d|1|d!19@
+dat|1|Data!25@
 exp|1|expressoes_regulares!10@
 lis|1|listar!10@
 men|1|menu!10@
-myc|0|
-out|0|
-per|1|Perfil!25@
-pes|1|Pessoa!17@
+out|1|outro!19@
+per|2|perfil!19@perfil2!19@
+pes|2|pessoa!19@Pessoa!25@
 pro|2|procurar_regex!10@procurar!10@
 rem|1|remover!10@
+vip|1|vip!19@
 -- END TREE
 -- START TREE 2
-14
-__c|1|__curtidas!4&27@
-__i|3|__init__!5&26@__init__!6&18@__init__!7&18@
-alt|1|altura!8&19@
-ano|1|ano!9&19@
-cur|1|curtir!5&26@
-dia|1|dia!9&19@
-emp|1|empresa!4&27@
-imp|3|imprime!7&18@imprimir!5&26@imprime_imc!6&18@
-mes|1|mes!9&19@
-nom|2|nome!4&27@nome!8&19@
-obt|1|obter_curtidas!5&26@
-pes|1|peso!8&19@
-sel|0|
-tel|1|telefone!4&27@
+13
+__c|0|
+__i|2|__init__!4&26@__init__!5&26@
+alt|1|altura!6&27@
+ano|1|ano!7&27@
+cur|0|
+dia|1|dia!7&27@
+emp|0|
+imp|2|imprime!5&26@imprime_imc!4&26@
+mes|1|mes!7&27@
+nom|1|nome!6&27@
+obt|0|
+pes|1|peso!6&27@
+tel|0|
 -- END TREE

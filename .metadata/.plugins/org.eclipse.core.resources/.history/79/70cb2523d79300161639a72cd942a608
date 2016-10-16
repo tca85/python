@@ -1,0 +1,56 @@
+# -*- coding: UTF-8 -*-
+
+'''
+Created on Oct 15, 2016
+
+Toda classe que recebe "object" como argumento é uma classe nova
+
+O arquivo "módulo.py" pode ter inúmeras classes
+
+@author: tca85
+'''
+#from models.modulo import Perfil
+
+
+#============================================================================================
+class Perfil(object):
+    'Classe padrão para perfis de usuários'
+
+    #-----------------------------------------------------------------------------------------
+    def __init__(self, nome, telefone, empresa):
+        '''
+        o método construtor precisa ter o nome __init__ e também receber "self" (utilizado como convenção)
+        self é uma referência ao objeto que criamos a partir da classe
+        '''
+        
+        # atributos de instância
+        self.nome = nome
+        self.telefone = telefone
+        self.empresa = empresa
+        
+        # para indicarmos que determinado atributo (também pode ser feito com método) 
+        # da classe não deve ser publico que é através do prefixo __ em sua declaração.
+        self.__curtidas = 0
+        
+    #-----------------------------------------------------------------------------------------
+    def imprimir(self):
+        print 'Nome : %s, Telefone: %s, Empresa: %s' % (self.nome, self.telefone, self.empresa)
+        
+    #-----------------------------------------------------------------------------------------
+    def curtir(self):
+        self.__curtidas += 1
+        
+    #-----------------------------------------------------------------------------------------
+    def obter_curtidas(self):
+        return self.__curtidas
+    
+#============================================================================================
+class PerfilVIP(Perfil):
+    
+    #-----------------------------------------------------------------------------------------
+    def obter_creditos(self):
+        
+        # o self de uma classe pai a partir de sua 
+        return super(PerfilVIP, self).obter_curtidas() * 10.0    
+    
+    #-----------------------------------------------------------------------------------------

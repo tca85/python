@@ -1,15 +1,17 @@
 # -*- coding: UTF-8 -*-
 
 '''
-Created on Oct 15, 2016
+Curso Python I: Programando com a linguagem
+https://cursos.alura.com.br/course/introducao-ao-python
+Python 2.7
 
 Toda classe que recebe "object" como argumento é uma classe nova
-
-O arquivo "módulo.py" pode ter inúmeras classes
+obs: o arquivo "módulo.py" pode ter inúmeras classes
 
 @author: tca85
 '''
 
+#============================================================================================
 class Perfil(object):
     'Classe padrão para perfis de usuários'
 
@@ -39,4 +41,25 @@ class Perfil(object):
         
     #-----------------------------------------------------------------------------------------
     def obter_curtidas(self):
-        return self.__curtidas    
+        return self.__curtidas
+    
+#============================================================================================
+class PerfilVIP(Perfil):
+    
+    #-----------------------------------------------------------------------------------------
+    def __init__(self, nome, telefone, empresa, apelido):
+        
+        # Recebe um atributo a mais, "apelido", e mantém o comportamento da classe pai
+        # utilizando o super
+        super(PerfilVIP, self).__init__(nome, telefone, empresa)
+        self.apelido = apelido
+    
+    #-----------------------------------------------------------------------------------------
+    def obter_creditos(self):
+        
+        # Para acessar o self de uma classe pai a partir de sua filha, utilizamos a função/método super
+        # recebe como primeiro parâmetro o nome da classe filha e como segundo parâmetro seu self
+        # caso contrário, não seria possível acessar o atributo __curtidas da classe pai
+        return super(PerfilVIP, self).obter_curtidas() * 10.0    
+    
+    #-----------------------------------------------------------------------------------------

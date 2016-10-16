@@ -1,7 +1,6 @@
 MODULES_MANAGER_V2
-TestarPerfil|/home/tca85/Github/python/Alura/TestarPerfil.py
+TestarModulos|/home/tca85/Github/python/Alura/TestarModulos.py
 app|/home/tca85/Github/python/Alura/app.py
-models.Data|/home/tca85/Github/python/Alura/models/Data.py
-models.Perfil|/home/tca85/Github/python/Alura/models/Perfil.py
-models.Pessoa|/home/tca85/Github/python/Alura/models/Pessoa.py
 models.__init__|/home/tca85/Github/python/Alura/models/__init__.py
+models.modulo|/home/tca85/Github/python/Alura/models/modulo.py
+models.modulo_exercicios|/home/tca85/Github/python/Alura/models/modulo_exercicios.py

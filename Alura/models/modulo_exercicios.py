@@ -3,6 +3,10 @@
 '''
 Created on Oct 15, 2016
 
+Curso Python I: Programando com a linguagem
+https://cursos.alura.com.br/course/introducao-ao-python
+Python 2.7
+
 @author: tca85
 '''
 
