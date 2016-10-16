@@ -78,7 +78,6 @@ class Perfil(object):
             print('Ocorreu o seguinte erro %s' % erro)    
             
         finally:
-            # O 'with-as' fecha automáticamente o arquivo. Estou deixando aqui só para lembrar...
             if (arquivo is not None):
                 arquivo.close()
             
