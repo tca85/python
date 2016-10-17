@@ -1,0 +1,13 @@
+'''
+Created on Oct 16, 2016
+
+@author: tca85
+'''
+
+class Orcamento(object):
+    
+    def __init__(self, params):
+        '''
+        Constructor
+        '''
+        

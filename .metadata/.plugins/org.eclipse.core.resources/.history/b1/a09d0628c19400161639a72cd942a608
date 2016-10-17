@@ -1,0 +1,17 @@
+'''
+Created on Oct 17, 2016
+
+https://cursos.alura.com.br/course/design-patterns-python
+Design Patterns Python I: Boas práticas de programação
+
+@author: tca85
+'''
+
+class Orcamento(object):
+    
+    def __init__(self, params):
+        '''
+        Constructor
+        '''
+        
+    

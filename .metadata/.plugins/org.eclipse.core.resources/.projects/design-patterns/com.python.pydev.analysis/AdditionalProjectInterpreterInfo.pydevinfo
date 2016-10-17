@@ -1,13 +1,21 @@
 -- VERSION_4
 -- START DISKCACHE_2
 /home/tca85/Github/python/.metadata/.plugins/org.eclipse.core.resources/.projects/design-patterns/com.python.pydev.analysis/v2_indexcache
+Orcamento|1476748623000000000|/home/tca85/Github/python/design-patterns/Orcamento.py
 -- END DISKCACHE
 -- START DICTIONARY
-0
+2
+1=Orcamento
+2=Orcamento.__init__
 -- END DICTIONARY
 -- START TREE 1
-0
+2
+myc|0|
+orc|1|Orcamento!9@
 -- END TREE
 -- START TREE 2
-0
+3
+__i|1|__init__!1&10@
+__v|1|__valor!2&11@
+val|1|valor!1&10@
 -- END TREE
