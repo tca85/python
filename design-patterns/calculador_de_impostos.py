@@ -18,6 +18,7 @@ class Calculador_de_impostos(object):
     '''
     def realiza_calculo(self, orcamento, imposto):
         
+        # Essa não é a forma ideal porque se houver mais um imposto teremos que modificar o código
         if 'ICMS' == imposto:
             icms_calculado = orcamento.valor * 0.1
             print icms_calculado
