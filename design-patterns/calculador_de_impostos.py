@@ -9,7 +9,7 @@ Design Patterns Python I: Boas práticas de programação
 @author: tca85
 '''
 
-from impostos import calcula_ISS, calcula_ICMS
+from impostos import ICMS, ISS
 
 #=============================================================================================
 class Calculador_de_impostos(object):
@@ -17,20 +17,15 @@ class Calculador_de_impostos(object):
     #-----------------------------------------------------------------------------------------
     '''
      Realiza cálculo
+     
+     Utiliza o Design Pattern "Strategy". Basicamente ele recebe qualquer classe que tenha
+     o método "calcula()", como se fosse uma interface. Também é chamado de Duck Typing essa
+     estratégia de receber "qualquer coisa" que tenha o método desejado
+     
     '''
     def realiza_calculo(self, orcamento, imposto):
-        
-        # Essa não é a forma ideal porque se houver mais um imposto teremos que modificar o código
-        # podemos melhorar um pouco modularizando o código fazendo a chamada de uma função
-        # impostos.calcula_ICMS
-        if 'ICMS' == imposto:
-            icms_calculado = calcula_ICMS(orcamento.valor)
-            print icms_calculado
-            
-        elif 'ISS' == imposto:
-            iss_calculado = calcula_ISS(orcamento.valor)
-            print iss_calculado
-        
+        print imposto.calcula(orcamento)
+               
     #-----------------------------------------------------------------------------------------
 #=============================================================================================    
     
@@ -43,9 +38,7 @@ if __name__ == '__main__':
     orcamento = Orcamento(500.0)
         
     calculador_de_impostos = Calculador_de_impostos()
-    
-    # Qual o imposto terá o cálculo realizado (hard-code)
-    calculador_de_impostos.realiza_calculo(orcamento, 'ICMS')
-    calculador_de_impostos.realiza_calculo(orcamento, 'ISS')
+    calculador_de_impostos.realiza_calculo(orcamento, ISS())
+    calculador_de_impostos.realiza_calculo(orcamento, ICMS())
     
 #-----------------------------------------------------------------------------------------

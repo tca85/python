@@ -1,9 +1,0 @@
-INSTUPorcamento
-/home/tca85/Github/python/design-patterns/orcamento.py
-INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&2|6|2|1
-orcamento=2
-Orcamento=1
-Orcamento.__init__=5
-valor=6
-__init__=3
-__valor=4
