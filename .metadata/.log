@@ -3837,3 +3837,38 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 
 !ENTRY org.eclipse.equinox.p2.repository 2 0 2016-10-17 19:00:18.392
 !MESSAGE Server returned lastModified <= 0 for https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/content.jar
+
+!ENTRY org.python.pydev.shared_core 4 4 2016-10-17 20:42:14.247
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=orcamento, ctx=Store, reserved=false]], value=null] (module: calculador_de_impostos file: /home/tca85/Github/python/design-patterns/calculador_de_impostos.py row: 33).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=orcamento, ctx=Store, reserved=false]], value=null] (module: calculador_de_impostos file: /home/tca85/Github/python/design-patterns/calculador_de_impostos.py row: 33).
+	at org.python.pydev.core.log.Log.log(Log.java:54)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:604)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:394)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:691)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:685)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:676)
+	at com.python.pydev.analysis.builder.AnalysisBuilderVisitor$1.call(AnalysisBuilderVisitor.java:115)
+	at com.python.pydev.analysis.builder.AnalysisBuilderVisitor$1.call(AnalysisBuilderVisitor.java:1)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.<init>(AnalysisBuilderRunnable.java:152)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnableFactory.createRunnable(AnalysisBuilderRunnableFactory.java:222)
+	at com.python.pydev.analysis.builder.AnalysisBuilderVisitor.doVisitChangedResource(AnalysisBuilderVisitor.java:180)
+	at com.python.pydev.analysis.builder.AnalysisBuilderVisitor.visitChangedResource(AnalysisBuilderVisitor.java:129)
+	at com.python.pydev.analysis.builder.AnalysisBuilderVisitor.visitChangedResource(AnalysisBuilderVisitor.java:45)
+	at org.python.pydev.builder.PydevGrouperVisitor.visitWith(PydevGrouperVisitor.java:115)
+	at org.python.pydev.builder.PydevGrouperVisitor.visitChangedResource(PydevGrouperVisitor.java:166)
+	at org.python.pydev.builder.PydevGrouperVisitor.finishDelayedVisits(PydevGrouperVisitor.java:190)
+	at org.python.pydev.builder.PyDevBuilder.build(PyDevBuilder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

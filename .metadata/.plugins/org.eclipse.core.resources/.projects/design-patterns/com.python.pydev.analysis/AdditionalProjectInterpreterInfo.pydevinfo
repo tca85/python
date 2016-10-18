@@ -1,21 +1,29 @@
 -- VERSION_4
 -- START DISKCACHE_2
 /home/tca85/Github/python/.metadata/.plugins/org.eclipse.core.resources/.projects/design-patterns/com.python.pydev.analysis/v2_indexcache
-Orcamento|1476748623000000000|/home/tca85/Github/python/design-patterns/Orcamento.py
+orcamento|1476748623000000000|/home/tca85/Github/python/design-patterns/orcamento.py
+calculador_de_impostos|1476751282000000000|/home/tca85/Github/python/design-patterns/calculador_de_impostos.py
 -- END DISKCACHE
 -- START DICTIONARY
-2
-1=Orcamento
-2=Orcamento.__init__
+5
+2=orcamento
+3=Orcamento
+4=Orcamento.__init__
+1=calculador_de_impostos
+5=Calculador_de_impostos
 -- END DICTIONARY
 -- START TREE 1
-2
+3
+cal|1|Calculador_de_impostos!9@
 myc|0|
-orc|1|Orcamento!9@
+orc|1|Orcamento!17@
 -- END TREE
 -- START TREE 2
-3
-__i|1|__init__!1&10@
-__v|1|__valor!2&11@
-val|1|valor!1&10@
+6
+__i|1|__init__!3&18@
+__v|1|__valor!4&19@
+cal|1|calculador_de_impostos!5&11@
+orc|1|orcamento!5&11@
+rea|1|realiza_calculo!5&10@
+val|1|valor!3&18@
 -- END TREE

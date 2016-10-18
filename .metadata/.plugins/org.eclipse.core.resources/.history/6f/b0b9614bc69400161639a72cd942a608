@@ -1,0 +1,37 @@
+# -*- coding: UTF-8 -*-
+
+'''
+Created on Oct 17, 2016
+
+https://cursos.alura.com.br/course/design-patterns-python
+Design Patterns Python I: Boas práticas de programação
+
+@author: tca85
+'''
+
+#=============================================================================================
+class Calculador_de_impostos(object):
+    
+    #-----------------------------------------------------------------------------------------
+    '''
+     Realiza cálculo
+    '''
+    def realiza_calculo(self, orcamento):
+        icms_calculado = orcamento.valor * 0.1
+        print icms_calculado
+    
+    #-----------------------------------------------------------------------------------------
+    '''
+     Realiza cálculo
+    '''
+    if __name__ == '__main__':
+        from orcamento import Orcamento
+        
+        
+    
+    
+    
+    
+    #-----------------------------------------------------------------------------------------
+    
+#=============================================================================================
