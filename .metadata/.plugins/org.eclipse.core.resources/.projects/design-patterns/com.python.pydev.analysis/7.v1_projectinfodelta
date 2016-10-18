@@ -1,0 +1,6 @@
+INSTUPimpostos
+/home/tca85/Github/python/design-patterns/impostos.py
+INFOS:&&2|1|2|0&&2|3|2|0
+calcula_ICMS=1
+calcula_ISS=3
+impostos=2
