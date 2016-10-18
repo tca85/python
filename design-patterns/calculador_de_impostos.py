@@ -9,8 +9,6 @@ Design Patterns Python I: Boas práticas de programação
 @author: tca85
 '''
 
-from impostos import ICMS, ISS
-
 #=============================================================================================
 class Calculador_de_impostos(object):
     
@@ -34,6 +32,7 @@ class Calculador_de_impostos(object):
 '''
 if __name__ == '__main__':
     from orcamento import Orcamento
+    from impostos import ICMS, ISS
       
     orcamento = Orcamento(500.0)
         
