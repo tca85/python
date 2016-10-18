@@ -42,7 +42,6 @@ if __name__ == '__main__':
         
     calculador_de_impostos = Calculador_de_impostos()
     
-    # Qual o imposto terá o cálculo realizado (hard-code)
     calculador_de_impostos.realiza_calculo(orcamento, 'ICMS')
     calculador_de_impostos.realiza_calculo(orcamento, 'ISS')
     

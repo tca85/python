@@ -24,7 +24,7 @@ class Calculador_de_impostos(object):
             
         elif 'ISS' == imposto:
             iss_calculado = orcamento.valor * 0.06
-            print iss_calculado
+            print iss_calculado 
         
         
         icms_calculado = orcamento.valor * 0.1
@@ -42,8 +42,6 @@ if __name__ == '__main__':
         
     calculador_de_impostos = Calculador_de_impostos()
     
-    # Qual o imposto terá o cálculo realizado (hard-code)
-    calculador_de_impostos.realiza_calculo(orcamento, 'ICMS')
-    calculador_de_impostos.realiza_calculo(orcamento, 'ISS')
+    calculador_de_impostos.realiza_calculo(orcamento)
     
 #-----------------------------------------------------------------------------------------
