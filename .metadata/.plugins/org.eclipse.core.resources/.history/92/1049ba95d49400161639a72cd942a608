@@ -8,6 +8,7 @@ Design Patterns Python I: Boas práticas de programação
 
 @author: tca85
 '''
+from __builtin__ import property
 
 #=============================================================================================
 class Orcamento(object):

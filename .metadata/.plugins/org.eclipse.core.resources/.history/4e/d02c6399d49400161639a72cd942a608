@@ -9,6 +9,7 @@ Design Patterns Python I: Boas práticas de programação
 @author: tca85
 '''
 
+
 #=============================================================================================
 class Orcamento(object):
     
