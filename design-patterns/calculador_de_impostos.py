@@ -28,8 +28,6 @@ class Calculador_de_impostos(object):
             print iss_calculado
         
         
-        icms_calculado = orcamento.valor * 0.1
-        print icms_calculado
     #-----------------------------------------------------------------------------------------
 #=============================================================================================    
     
