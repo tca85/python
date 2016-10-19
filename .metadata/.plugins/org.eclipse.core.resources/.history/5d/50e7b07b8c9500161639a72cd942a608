@@ -1,0 +1,49 @@
+# -*- coding: UTF-8 -*-
+
+'''
+Created on Oct 17, 2016
+
+https://cursos.alura.com.br/course/design-patterns-python
+Design Patterns Python I: Boas práticas de programação
+
+@author: tca85
+'''
+
+#=============================================================================================
+class Orcamento(object):
+    
+    #-----------------------------------------------------------------------------------------
+    '''
+     Constructor
+    '''
+    def __init__(self, valor):    
+        # atributo 'privado'
+        self.__valor = valor
+    
+    #-----------------------------------------------------------------------------------------
+    '''
+     Criamos o atributo valor como property , mas com acesso de apenas leitura. Isso garante 
+     que o valor recebido pelo construtor não seja alterado depois do orçamento criado
+    '''
+    @property
+    def valor(self):
+        return self.__valor
+    
+    #-----------------------------------------------------------------------------------------
+#=============================================================================================
+
+# um item criado não pode ser alterado, suas propriedades são somente leitura
+class Item(object):
+    def __init__(self, nome, valor):
+        self.__nome = nome
+        self.__valor = valor
+        
+    @property
+    def nome(self):
+        return self.__nome        
+    
+    @property
+    def valor(self):
+        return self.__valor
+
+#=============================================================================================

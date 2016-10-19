@@ -1,1 +1,14 @@
-DELSTRcalculador_de_impostos
+INSTUPorcamento
+/home/tca85/Github/python/design-patterns/orcamento.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&2|6|2|1&&1|7|2|0&&2|3|2|7&&3|8|2|9&&3|10|2|9&&2|11|2|7&&2|6|2|7
+orcamento=2
+Item=7
+Orcamento=1
+Orcamento.__init__=5
+__nome=8
+__itens=4
+valor=6
+Item.__init__=9
+nome=11
+__init__=3
+__valor=10

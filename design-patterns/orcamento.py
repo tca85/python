@@ -16,18 +16,54 @@ class Orcamento(object):
     '''
      Constructor
     '''
-    def __init__(self, valor):    
-        # atributo 'privado'
-        self.__valor = valor
+    def __init__(self):
+        self.__itens = []
+        
+    #-----------------------------------------------------------------------------------------
+    def adiciona_item(self, item):
+        self.__itens.append(item)
     
     #-----------------------------------------------------------------------------------------
     '''
      Criamos o atributo valor como property , mas com acesso de apenas leitura. Isso garante 
      que o valor recebido pelo construtor não seja alterado depois do orçamento criado
+     
+     Quando a propriedade for acessada, ela soma cada item retornando o valor do orçamento
     '''
     @property
     def valor(self):
-        return self.__valor
+        total = 0.0
+        
+        for item in self.__itens:
+            total += item.valor
+        
+        return total
     
     #-----------------------------------------------------------------------------------------
+    '''
+     Retornamos uma tupla, já que não faz sentido alterar os itens de um orçamento
+    '''
+    def obter_itens(self):
+        return tuple(self.__itens)
+    #-----------------------------------------------------------------------------------------
+    
+    
+#=============================================================================================
+
+# um item criado não pode ser alterado, suas propriedades são somente leitura
+class Item(object):
+    def __init__(self, nome, valor):
+        
+        # atributos 'privados'
+        self.__nome = nome
+        self.__valor = valor
+        
+    @property
+    def nome(self):
+        return self.__nome        
+    
+    @property
+    def valor(self):
+        return self.__valor
+
 #=============================================================================================

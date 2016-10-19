@@ -1,0 +1,60 @@
+# -*- coding: UTF-8 -*-
+
+'''
+Created on Oct 17, 2016
+
+https://cursos.alura.com.br/course/design-patterns-python
+Design Patterns Python I: Boas práticas de programação
+
+Design Pattern nada é que uma solução elegante para um problema que é muito recorrente em nosso dia-a-dia
+
+- O mais importante ao estudar padrões de projeto é entender qual a real motivação do padrão, e quando ele deve ser aplicado.
+- As implementações são menos importantes, pois podem variar.
+- O importante é resolver o problema de maneira elegante, usando a ideia por trás do padrão como um guia na implementação.
+
+@author: tca85
+'''
+
+#=============================================================================================
+class Calculador_de_impostos(object):
+    
+    #-----------------------------------------------------------------------------------------
+    '''
+     Realiza cálculo
+     
+     Utiliza o Design Pattern "Strategy". Basicamente ele recebe qualquer classe que tenha
+     o método "calcula()", como se fosse uma interface. Também é chamado de Duck Typing essa
+     estratégia de receber "qualquer coisa" que tenha o método desejado
+     
+     O padrão Strategy é muito útil quando temos um conjunto de algoritmos similares, 
+     e precisamos alternar entre eles em diferentes pedaços da aplicação.
+     Temos diferentes maneira de calcular o imposto, e precisamos alternar entre elas.
+     
+     O Strategy nos oferece uma maneira flexível para escrever diversos algoritmos diferentes, 
+     e de passar esses algoritmos para classes clientes que precisam deles. 
+     Esses clientes desconhecem qual é o algoritmo "real" que está sendo executado, 
+     e apenas manda o algoritmo rodar. Isso faz com que o código da classe cliente 
+     fique bastante desacoplado das implementações dos algoritmos, possibilitando 
+     assim com que esse cliente consiga trabalhar com N diferentes algoritmos sem 
+     precisar alterar o seu código.
+    '''
+    def realiza_calculo(self, orcamento, imposto):
+        print imposto.calcula(orcamento)
+               
+    #-----------------------------------------------------------------------------------------
+#=============================================================================================    
+    
+'''
+ A chamada da função main está sendo feita aqui para evitar criar uma classe para testar
+'''
+if __name__ == '__main__':
+    from orcamento import Orcamento
+    from impostos import ICMS, ISS
+      
+    orcamento = Orcamento(500.0)
+        
+    calculador_de_impostos = Calculador_de_impostos()
+    calculador_de_impostos.realiza_calculo(orcamento, ISS())
+    calculador_de_impostos.realiza_calculo(orcamento, ICMS())
+    
+#-----------------------------------------------------------------------------------------
