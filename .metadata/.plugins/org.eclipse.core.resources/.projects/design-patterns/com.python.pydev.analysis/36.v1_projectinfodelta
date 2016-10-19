@@ -1,0 +1,8 @@
+INSTUPcalculador_de_descontos
+/home/tca85/Github/python/design-patterns/calculador_de_descontos.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|0&&3|2|2|0&&3|5|2|0
+orcamento=4
+desconto=5
+calculador_de_descontos=2
+calcula=3
+Calculador_de_descontos=1

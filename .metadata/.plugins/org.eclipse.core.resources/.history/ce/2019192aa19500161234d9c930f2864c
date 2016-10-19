@@ -16,14 +16,9 @@ Ao invés de escrevermos código procedural, e deixarmos um único método desco
 o que deve ser feito, quebramos essas responsabilidades em várias diferentes classes, 
 e as unimos como uma corrente.
 
-Qual é a diferença entre uma estratégia e Chain of Responsibility?
-Cada "estratégia" também possui a responsabilidade de descobrir se ela deve ser aplicada e, 
-caso não aplique, delegar para a próxima. 
-Por isso tem nas classes como Desconto_por_cinco_itens aquele "if", e por isso ela deve 
-saber do próximo
-
 @author: tca85
 '''
+
 
 #=============================================================================================
 class Desconto_por_cinco_itens(object):

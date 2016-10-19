@@ -18,9 +18,7 @@ e as unimos como uma corrente.
 
 Qual é a diferença entre uma estratégia e Chain of Responsibility?
 Cada "estratégia" também possui a responsabilidade de descobrir se ela deve ser aplicada e, 
-caso não aplique, delegar para a próxima. 
-Por isso tem nas classes como Desconto_por_cinco_itens aquele "if", e por isso ela deve 
-saber do próximo
+caso não aplique, delegar para a próxima. Por isso tem nas classes como Desconto_por_cinco_itens aquele if, e por isso 
 
 @author: tca85
 '''
