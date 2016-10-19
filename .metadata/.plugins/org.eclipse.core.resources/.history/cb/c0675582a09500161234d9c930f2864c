@@ -48,10 +48,6 @@ class Desconto_por_mais_de_quinhentos_reais(object):
     #-----------------------------------------------------------------------------------------
 
 #=============================================================================================
-'''
- Repare que essa é a última condição de descontos da cadeia. Ela não precisa ter
- o método construtor recebendo o próximo desconto, por isso retorna zero.
-'''
 class Sem_desconto(object):
     #-----------------------------------------------------------------------------------------
     def calcular(self, orcamento):
