@@ -48,7 +48,11 @@ class Orcamento(object):
             total += item.valor
         
         return total
+    
+
     #-----------------------------------------------------------------------------------------
+    
+    
 #=============================================================================================
 
 # um item criado não pode ser alterado, suas propriedades são somente leitura

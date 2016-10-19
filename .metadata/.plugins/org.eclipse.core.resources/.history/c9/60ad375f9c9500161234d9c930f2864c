@@ -18,6 +18,7 @@ class Orcamento(object):
     '''
     def __init__(self):
         self.__itens = []
+        
     #-----------------------------------------------------------------------------------------
     def adiciona_item(self, item):
         self.__itens.append(item)
@@ -48,7 +49,11 @@ class Orcamento(object):
             total += item.valor
         
         return total
+    
+
     #-----------------------------------------------------------------------------------------
+    
+    
 #=============================================================================================
 
 # um item criado não pode ser alterado, suas propriedades são somente leitura

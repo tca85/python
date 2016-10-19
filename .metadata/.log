@@ -3875,3 +3875,13 @@ java.lang.RuntimeException: Did not expect to find item below node: Assign[targe
 
 !ENTRY org.eclipse.equinox.p2.repository 2 0 2016-10-18 18:21:30.645
 !MESSAGE Server returned lastModified <= 0 for https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/content.jar
+!SESSION 2016-10-18 21:27:00.386 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-10-18 21:27:26.322
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

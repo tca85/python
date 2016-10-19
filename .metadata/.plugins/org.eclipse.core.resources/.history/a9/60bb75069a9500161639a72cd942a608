@@ -18,20 +18,10 @@ class Orcamento(object):
     '''
     def __init__(self):
         self.__itens = []
+        
     #-----------------------------------------------------------------------------------------
     def adiciona_item(self, item):
         self.__itens.append(item)
-    
-    #-----------------------------------------------------------------------------------------
-    @property
-    def total_itens(self):
-        return len(self.__itens)    
-    #-----------------------------------------------------------------------------------------
-    '''
-     Retornamos uma tupla, já que não faz sentido alterar os itens de um orçamento
-    '''
-    def obter_itens(self):
-        return tuple(self.__itens)    
     
     #-----------------------------------------------------------------------------------------
     '''
@@ -48,7 +38,16 @@ class Orcamento(object):
             total += item.valor
         
         return total
+    
     #-----------------------------------------------------------------------------------------
+    '''
+     Retornamos uma tupla, já que não faz sentido alterar os itens de um orçamento
+    '''
+    def obter_itens(self):
+        return tuple(self.__itens)
+    #-----------------------------------------------------------------------------------------
+    
+    
 #=============================================================================================
 
 # um item criado não pode ser alterado, suas propriedades são somente leitura
