@@ -26,7 +26,8 @@ class Desconto_por_mais_de_quinhentos_reais(object):
     
     #-----------------------------------------------------------------------------------------
     def __init__(self, proximo_desconto):
-        self._proximo_desconto = proximo_desconto
+        self._proximo_desconto = proximo_desconto    
+    
     #-----------------------------------------------------------------------------------------
     def calcular(self, orcamento):
         if orcamento.valor > 500:
