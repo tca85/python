@@ -3885,3 +3885,9 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY org.eclipse.core.resources 2 10035 2016-10-18 21:27:26.322
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface.text 2 0 2016-10-18 21:41:42.318
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-10-18 21:41:42.323
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

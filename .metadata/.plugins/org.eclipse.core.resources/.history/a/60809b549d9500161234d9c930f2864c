@@ -1,0 +1,13 @@
+'''
+Created on Oct 18, 2016
+
+@author: tca85
+'''
+
+#=============================================================================================
+class Desconto_por_cinto_itens(object):
+
+    def calcular(orcamento):
+        
+#=============================================================================================
+class Desconto_por_mais_de_quinhentos_reais(object):        

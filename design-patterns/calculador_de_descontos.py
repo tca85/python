@@ -6,16 +6,20 @@ Created on Oct 18, 2016
 @author: tca85
 '''
 
+from descontos import Desconto_por_cinco_itens, Desconto_por_mais_de_quinhentos_reais
+
 #=============================================================================================
 class Calculador_de_descontos(object):
     
     #-----------------------------------------------------------------------------------------
     def calcula(self, orcamento):
-        if orcamento.total_itens > 5:
-            return orcamento.valor * 0.1
+        desconto = Desconto_por_cinco_itens().calcular(orcamento)
         
-        elif orcamento.valor > 500:
-            return orcamento.valor * 0.07
+        if desconto == 0:
+            desconto = Desconto_por_mais_de_quinhentos_reais().calcular(orcamento)
+            
+        return desconto      
+        
     #-----------------------------------------------------------------------------------------
 
 #=============================================================================================

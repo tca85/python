@@ -1,0 +1,7 @@
+INSTUPdescontos
+/home/tca85/Github/python/design-patterns/descontos.py
+INFOS:&&1|1|2|0&&2|3|2|1&&1|4|2|0&&2|3|2|4
+Desconto_por_cinco_itens=1
+descontos=2
+Desconto_por_mais_de_quinhentos_reais=4
+calcular=3
