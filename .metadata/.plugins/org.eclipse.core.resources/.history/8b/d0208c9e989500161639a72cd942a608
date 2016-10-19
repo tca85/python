@@ -25,7 +25,7 @@ class Orcamento(object):
     
     #-----------------------------------------------------------------------------------------
     '''
-     Criamos o atributo valor como property ou seja seu acesso é apenas leitura. Isso garante 
+     Criamos o atributo valor como property , mas com acesso de apenas leitura. Isso garante 
      que o valor recebido pelo construtor não seja alterado depois do orçamento criado
      
      Quando a propriedade for acessada, ela soma cada item retornando o valor do orçamento
