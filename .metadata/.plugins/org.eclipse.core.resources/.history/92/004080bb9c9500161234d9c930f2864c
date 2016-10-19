@@ -13,11 +13,15 @@ Design Patterns Python I: Boas práticas de programação
 class Orcamento(object):
     
     #-----------------------------------------------------------------------------------------
+    '''
+     Constructor
+    '''
     def __init__(self):
         self.__itens = []
     #-----------------------------------------------------------------------------------------
     def adiciona_item(self, item):
         self.__itens.append(item)
+    
     #-----------------------------------------------------------------------------------------
     @property
     def total_itens(self):
@@ -48,20 +52,18 @@ class Orcamento(object):
 
 # um item criado não pode ser alterado, suas propriedades são somente leitura
 class Item(object):
-    
-    #-----------------------------------------------------------------------------------------
     def __init__(self, nome, valor):
+        
         # atributos 'privados'
         self.__nome = nome
         self.__valor = valor
-    #-----------------------------------------------------------------------------------------
+        
     @property
     def nome(self):
         return self.__nome        
-    #-----------------------------------------------------------------------------------------
+    
     @property
     def valor(self):
         return self.__valor
-    #-----------------------------------------------------------------------------------------
 
 #=============================================================================================

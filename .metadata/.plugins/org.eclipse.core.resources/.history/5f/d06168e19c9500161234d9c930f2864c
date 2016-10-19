@@ -51,6 +51,7 @@ class Item(object):
     
     #-----------------------------------------------------------------------------------------
     def __init__(self, nome, valor):
+        
         # atributos 'privados'
         self.__nome = nome
         self.__valor = valor
@@ -59,6 +60,7 @@ class Item(object):
     def nome(self):
         return self.__nome        
     #-----------------------------------------------------------------------------------------
+     
     @property
     def valor(self):
         return self.__valor

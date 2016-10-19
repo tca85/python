@@ -59,6 +59,7 @@ class Item(object):
     def nome(self):
         return self.__nome        
     #-----------------------------------------------------------------------------------------
+     
     @property
     def valor(self):
         return self.__valor
