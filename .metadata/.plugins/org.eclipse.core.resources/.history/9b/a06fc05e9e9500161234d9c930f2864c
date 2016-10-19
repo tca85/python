@@ -31,7 +31,8 @@ class Desconto_por_mais_de_quinhentos_reais(object):
         if orcamento.valor > 500:
             return orcamento.valor * 0.07
         else:
-            return self._proximo_desconto.calcular(orcamento)
+            # se não segue a regra, o desconto é zero!
+            return 0
     #-----------------------------------------------------------------------------------------
 
 #=============================================================================================    
