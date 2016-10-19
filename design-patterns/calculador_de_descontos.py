@@ -6,19 +6,21 @@ Created on Oct 18, 2016
 @author: tca85
 '''
 
-from descontos import Desconto_por_cinco_itens, Desconto_por_mais_de_quinhentos_reais
+from descontos import Desconto_por_cinco_itens, Desconto_por_mais_de_quinhentos_reais, Sem_desconto
 
 #=============================================================================================
 class Calculador_de_descontos(object):
     
+    '''
+      Faz o cálculo utilizando o design pattern Chain of Responsibility
+    '''
     #-----------------------------------------------------------------------------------------
     def calcula(self, orcamento):
-        desconto = Desconto_por_cinco_itens().calcular(orcamento)
-        
-        if desconto == 0:
-            desconto = Desconto_por_mais_de_quinhentos_reais().calcular(orcamento)
-            
-        return desconto      
+        return Desconto_por_cinco_itens(
+                   Desconto_por_mais_de_quinhentos_reais(
+                       Sem_desconto()
+                   )
+               ).calcular(orcamento)
         
     #-----------------------------------------------------------------------------------------
 

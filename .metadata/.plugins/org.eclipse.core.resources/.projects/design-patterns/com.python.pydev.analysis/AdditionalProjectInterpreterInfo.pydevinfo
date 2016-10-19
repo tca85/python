@@ -2,46 +2,51 @@
 -- START DISKCACHE_2
 /home/tca85/Github/python/.metadata/.plugins/org.eclipse.core.resources/.projects/design-patterns/com.python.pydev.analysis/v2_indexcache
 orcamento|1476841494000000000|/home/tca85/Github/python/design-patterns/orcamento.py
+descontos|1476842122000000000|/home/tca85/Github/python/design-patterns/descontos.py
 calculador_de_impostos|1476834387000000000|/home/tca85/Github/python/design-patterns/calculador_de_impostos.py
-calculador_de_descontos|1476841598000000000|/home/tca85/Github/python/design-patterns/calculador_de_descontos.py
 impostos|1476754563000000000|/home/tca85/Github/python/design-patterns/impostos.py
 -- END DISKCACHE
 -- START DICTIONARY
-12
+16
 4=orcamento
-7=Item
-5=Orcamento.__init__
-6=Orcamento
-9=ICMS
-2=calculador_de_impostos
-8=Item.__init__
-10=ISS
-1=calculador_de_descontos
+13=ICMS
+15=Sem_desconto
+1=calculador_de_impostos
+12=Desconto_por_mais_de_quinhentos_reais.__init__
+14=ISS
+9=Item
+7=Orcamento.__init__
+8=Orcamento
+2=descontos
+5=Desconto_por_cinco_itens
+6=Desconto_por_mais_de_quinhentos_reais
+10=Item.__init__
+11=Desconto_por_cinco_itens.__init__
 3=impostos
-11=Calculador_de_descontos
-12=Calculador_de_impostos
+16=Calculador_de_impostos
 -- END DICTIONARY
 -- START TREE 1
-7
-cal|4|Calculador_de_descontos!9@calculador_de_descontos!11@Calculador_de_impostos!17@calculador_de_impostos!19@
-des|1|desconto!11@
+8
+cal|2|Calculador_de_impostos!9@calculador_de_impostos!11@
+des|2|Desconto_por_mais_de_quinhentos_reais!17@Desconto_por_cinco_itens!17@
 icm|1|ICMS!25@
 iss|1|ISS!25@
 ite|1|Item!33@
 myc|0|
-orc|3|Orcamento!33@orcamento!19@orcamento!11@
+orc|2|Orcamento!33@orcamento!11@
+sem|1|Sem_desconto!17@
 -- END TREE
 -- START TREE 2
 11
-__i|3|__itens!5&35@__init__!6&34@__init__!7&34@
-__n|1|__nome!8&35@
-__v|1|__valor!8&35@
-_pr|0|
-adi|1|adiciona_item!6&34@
-cal|3|calcula!9&26@calcula!10&26@calcula!11&10@
-nom|1|nome!7&34@
-obt|1|obter_itens!6&34@
-rea|1|realiza_calculo!12&18@
-tot|1|total_itens!6&34@
-val|2|valor!6&34@valor!7&34@
+__i|5|__init__!5&18@__init__!6&18@__itens!7&35@__init__!8&34@__init__!9&34@
+__n|1|__nome!10&35@
+__v|1|__valor!10&35@
+_pr|2|_proximo_desconto!11&19@_proximo_desconto!12&19@
+adi|1|adiciona_item!8&34@
+cal|5|calcula!13&26@calcula!14&26@calcula!15&18@calcular!5&18@calcular!6&18@
+nom|1|nome!9&34@
+obt|1|obter_itens!8&34@
+rea|1|realiza_calculo!16&10@
+tot|1|total_itens!8&34@
+val|2|valor!8&34@valor!9&34@
 -- END TREE

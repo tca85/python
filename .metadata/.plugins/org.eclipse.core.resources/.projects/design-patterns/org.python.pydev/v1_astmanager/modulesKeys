@@ -1,5 +1,6 @@
 MODULES_MANAGER_V2
 calculador_de_descontos|/home/tca85/Github/python/design-patterns/calculador_de_descontos.py
 calculador_de_impostos|/home/tca85/Github/python/design-patterns/calculador_de_impostos.py
+descontos|/home/tca85/Github/python/design-patterns/descontos.py
 impostos|/home/tca85/Github/python/design-patterns/impostos.py
 orcamento|/home/tca85/Github/python/design-patterns/orcamento.py

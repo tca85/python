@@ -1,0 +1,41 @@
+# -*- coding: UTF-8 -*-
+
+'''
+Created on Oct 18, 2016
+
+Se o orçamento atende a regra de um desconto, o mesmo já calcula o desconto. 
+Caso contrário, ele passa para o "próximo" desconto, qualquer que seja esse próximo desconto,
+ou seja, uma cadeia de descontos
+
+@author: tca85
+'''
+
+#=============================================================================================
+class Desconto_por_cinco_itens(object):
+
+    #-----------------------------------------------------------------------------------------
+    def __init__(self, proximo_desconto):
+        self._proximo_desconto = proximo_desconto
+    #-----------------------------------------------------------------------------------------
+    def calcular(self, orcamento):
+        if orcamento.total_itens > 5:
+            return orcamento.valor * 0.1
+        else:
+            return self._proximo_desconto.calcular(orcamento)
+    #-----------------------------------------------------------------------------------------
+            
+#=============================================================================================
+class Desconto_por_mais_de_quinhentos_reais(object):
+    
+    #-----------------------------------------------------------------------------------------
+    def __init__(self, proximo_desconto):
+        self._proximo_desconto = proximo_desconto
+    #-----------------------------------------------------------------------------------------
+    def calcular(self, orcamento):
+        if orcamento.valor > 500:
+            return orcamento.valor * 0.07
+        else:
+            return self._proximo_desconto.calcular(orcamento)
+    #-----------------------------------------------------------------------------------------
+
+#=============================================================================================    

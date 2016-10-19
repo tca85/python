@@ -1,6 +1,7 @@
 INSTUPdescontos
 /home/tca85/Github/python/design-patterns/descontos.py
-INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&2|6|2|1&&1|7|2|0&&2|3|2|7&&3|4|2|8&&2|6|2|7
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&2|6|2|1&&1|7|2|0&&2|3|2|7&&3|4|2|8&&2|6|2|7&&1|9|2|0&&2|6|2|9
+Sem_desconto=9
 Desconto_por_cinco_itens=1
 descontos=2
 _proximo_desconto=4
