@@ -69,15 +69,14 @@ class ISS(object):
   
   Precisamos implementar todos métodos abstratos nas classes filhas, ou seja,
   deve_usar_maxima_taxacao, maxima_taxacao e minima_taxacao
-  Outro detalhe importante: a assinatura tem que ser igual ao da classe pai, Template_de_imposto_condicional
-  
-  O método calcula é implementado na classe-pai, e não precisa ser re-escrito.
   
 '''
 
 class ICPP(Template_de_imposto_condicional):
+    
     '''
-     Implementação dos métodos abstratos herdados da classe pai
+     Os métodos  precisam ser implementados
+     obs: a assinatura tem que ser igual ao da classe pai, Template_de_imposto_condicional
     '''
     #-----------------------------------------------------------------------------------------
     def deve_usar_maxima_taxacao(self, orcamento):
@@ -94,8 +93,10 @@ class ICPP(Template_de_imposto_condicional):
 
 
 class IKCV(Template_de_imposto_condicional):
+    
     '''
-     Implementação dos métodos abstratos herdados da classe pai
+     Os métodos deve_usar_maxima_taxacao, maxima_taxacao e minima_taxacao precisam ser implementados
+     obs: a assinatura tem que ser igual ao da classe pai, Template_de_imposto_condicional
     '''
     #-----------------------------------------------------------------------------------------
     def deve_usar_maxima_taxacao(self, orcamento):

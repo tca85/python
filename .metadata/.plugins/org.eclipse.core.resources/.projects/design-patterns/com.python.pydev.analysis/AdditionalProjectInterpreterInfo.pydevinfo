@@ -39,14 +39,18 @@ sem|1|Sem_desconto!25@
 tem|0|
 -- END TREE
 -- START TREE 2
-12
+16
 __i|5|__init__!5&26@__init__!6&26@__itens!7&35@__init__!8&34@__init__!9&34@
+__m|0|
 __n|1|__nome!10&35@
 __t|0|
 __v|1|__valor!10&35@
 _pr|2|_proximo_desconto!11&27@_proximo_desconto!12&27@
 adi|1|adiciona_item!8&34@
 cal|4|calcula!13&10@calcular!5&26@calcular!6&26@calcular!14&26@
+dev|0|
+max|0|
+min|0|
 nom|1|nome!9&34@
 obt|1|obter_itens!8&34@
 rea|1|realiza_calculo!15&18@

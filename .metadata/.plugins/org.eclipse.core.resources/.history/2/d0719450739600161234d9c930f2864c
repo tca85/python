@@ -67,18 +67,24 @@ class ISS(object):
   Regras parecidas podem vim de um 'molde', certo? Por isso criamos a classe abstrata
   Template_de_imposto_condicional, e fazemos ICPP e IKCV herdarem dela.
   
-  Precisamos implementar todos métodos abstratos nas classes filhas, ou seja,
-  deve_usar_maxima_taxacao, maxima_taxacao e minima_taxacao
-  Outro detalhe importante: a assinatura tem que ser igual ao da classe pai, Template_de_imposto_condicional
-  
-  O método calcula é implementado na classe-pai, e não precisa ser re-escrito.
+  Precisamos implementar os métodos abstratos nas classes filhas.
   
 '''
 
 class ICPP(Template_de_imposto_condicional):
+    
+    #-----------------------------------------------------------------------------------------
     '''
-     Implementação dos métodos abstratos herdados da classe pai
-    '''
+     O imposto ICPP é calculado da seguinte forma: caso o valor do orçamento seja 
+     menor que R$ 500,00, deve-se cobrar 5%; caso contrário, 7%.
+    '''    
+    def calcula(self, orcamento):
+        if orcamento.valor > 500:
+            return orcamento.valor * 0.07
+        else:
+            return orcamento.valor * 0.05
+    #-----------------------------------------------------------------------------------------
+    
     #-----------------------------------------------------------------------------------------
     def deve_usar_maxima_taxacao(self, orcamento):
         return orcamento.valor > 500
@@ -90,25 +96,33 @@ class ICPP(Template_de_imposto_condicional):
         return orcamento.valor * 0.05
     #-----------------------------------------------------------------------------------------
     
+    
 #=============================================================================================
 
 
 class IKCV(Template_de_imposto_condicional):
-    '''
-     Implementação dos métodos abstratos herdados da classe pai
-    '''
-    #-----------------------------------------------------------------------------------------
+    
     def deve_usar_maxima_taxacao(self, orcamento):
         return orcamento.valor > 500 and self.__tem_item_maior_que_100_reais(orcamento)
-    #-----------------------------------------------------------------------------------------
+
     def maxima_taxacao(self, orcamento):
         return orcamento.valor * 0.10
-    #-----------------------------------------------------------------------------------------
+
     def minima_taxacao(self, orcamento):
         return orcamento.valor * 0.06
-    #-----------------------------------------------------------------------------------------
     
     #-----------------------------------------------------------------------------------------
+    '''
+     Já o imposto IKCV, caso o valor do orçamento seja maior que R$ 500,00 e algum item tiver valor
+     superior a R$ 100,00, o imposto a ser cobrado é de 10%; caso contrário, 6%.
+    '''
+    def calcula(self, orcamento):
+        if orcamento.valor > 500 and self.__tem_item_maior_que_100_reais(orcamento):
+            return orcamento.valor * 0.10
+        else:
+            return orcamento.valor * 0.06
+    #-----------------------------------------------------------------------------------------
+    
     def __tem_item_maior_que_100_reais(self, orcamento):
         for item in orcamento.obter_itens():
             if item.valor > 100:
