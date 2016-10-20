@@ -77,6 +77,8 @@ class ISS(object):
   A classe Template_de_imposto_condicional possui um método que funciona como um template, 
   ou seja, um molde, para as classes filhas. Daí o nome do padrão de projeto: Template Method.
   
+  
+  
 '''
 
 class ICPP(Template_de_imposto_condicional):

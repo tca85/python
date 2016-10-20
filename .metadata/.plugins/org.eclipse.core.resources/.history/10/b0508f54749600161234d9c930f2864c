@@ -73,10 +73,6 @@ class ISS(object):
   
   O método calcula é implementado na classe-pai, e não precisa ser re-escrito.
   
-  Perceba que ambas as classes de impostos só implementam as partes "que faltam" do algoritmo.
-  A classe Template_de_imposto_condicional possui um método que funciona como um template, 
-  ou seja, um molde, para as classes filhas. Daí o nome do padrão de projeto: Template Method.
-  
 '''
 
 class ICPP(Template_de_imposto_condicional):
