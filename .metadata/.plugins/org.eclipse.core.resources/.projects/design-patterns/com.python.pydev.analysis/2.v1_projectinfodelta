@@ -1,9 +1,1 @@
-INSTUPimpostos
-/home/tca85/Github/python/design-patterns/impostos.py
-INFOS:&&1|1|2|0&&2|3|2|1&&1|4|2|0&&2|3|2|4&&1|5|2|0&&2|3|2|5&&1|6|2|0&&2|3|2|6
-ICMS=1
-IKCV=6
-ISS=4
-ICPP=5
-calcula=3
-impostos=2
+DELSTRimpostos

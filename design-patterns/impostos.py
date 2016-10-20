@@ -10,6 +10,18 @@ Todas classes que querem ser um imposto precisam ter o método calcula
 '''
 
 #=============================================================================================
+'''
+ Poderíamos escrever um algoritmo que generaliza os outros dois, algo como um "molde":
+'''
+class Template_de_imposto_condicional(object):
+    
+    #-----------------------------------------------------------------------------------------
+    def calcula(self, orcamento):
+        return False
+        
+    #-----------------------------------------------------------------------------------------
+
+#=============================================================================================
 class ICMS(object):
     
     #-----------------------------------------------------------------------------------------
@@ -32,13 +44,13 @@ class ISS(object):
   cobram a máxima ou a mínima.
 '''
 
-'''
- O imposto ICPP é calculado da seguinte forma: caso o valor do orçamento seja 
- menor que R$ 500,00, deve-se cobrar 5%; caso contrário, 7%.
-'''
 class ICPP(object):
     
     #-----------------------------------------------------------------------------------------
+    '''
+     O imposto ICPP é calculado da seguinte forma: caso o valor do orçamento seja 
+     menor que R$ 500,00, deve-se cobrar 5%; caso contrário, 7%.
+    '''    
     def calcula(self, orcamento):
         if orcamento.valor > 500:
             return orcamento.valor * 0.07
@@ -48,13 +60,14 @@ class ICPP(object):
     
 #=============================================================================================
 
-'''
- Já o imposto IKCV, caso o valor do orçamento seja maior que R$ 500,00 e algum item tiver valor
- superior a R$ 100,00, o imposto a ser cobrado é de 10%; caso contrário, 6%.
-'''
+
 class IKCV(object):
     
     #-----------------------------------------------------------------------------------------
+    '''
+     Já o imposto IKCV, caso o valor do orçamento seja maior que R$ 500,00 e algum item tiver valor
+     superior a R$ 100,00, o imposto a ser cobrado é de 10%; caso contrário, 6%.
+    '''
     def calcula(self, orcamento):
         if orcamento.valor > 500 and self.__tem_item_maior_que_100_reais(orcamento):
             return orcamento.valor * 0.10
@@ -69,6 +82,5 @@ class IKCV(object):
             
             return False
     #-----------------------------------------------------------------------------------------
-
 
 #=============================================================================================
