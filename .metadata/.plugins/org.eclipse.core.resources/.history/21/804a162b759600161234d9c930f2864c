@@ -33,8 +33,7 @@ class Template_de_imposto_condicional(object):
 
     '''
      Como o método abstrato nada faz e aguarda sua implementação por uma classe filha, precisamos 
-     colocar a instrução pass, porque Python não suporta a criação de métodos ou funções que nada fazem, 
-     uma instrução no mínimo é requerida.
+     colocar a instrução pass, porque Python não suporta a criação de métodos ou funções que nada fazem, uma instrução no mínimo é requerida.
     '''
     #-----------------------------------------------------------------------------------------
     @abstractmethod
