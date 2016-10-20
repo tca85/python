@@ -27,12 +27,6 @@ class ISS(object):
 #=============================================================================================
 
 '''
-  Veja que os dois impostos, apesar de diferentes, possuem uma estrutura em comum:
-  Ambos checam o orçamento para ver se devem cobrar a taxação máxima e, a partir daí, 
-  cobram a máxima ou a mínima.
-'''
-
-'''
  O imposto ICPP é calculado da seguinte forma: caso o valor do orçamento seja 
  menor que R$ 500,00, deve-se cobrar 5%; caso contrário, 7%.
 '''
