@@ -17,8 +17,13 @@ class Template_de_imposto_condicional(object):
     
     #-----------------------------------------------------------------------------------------
     def calcula(self, orcamento):
-        return False
         
+        # Bastaria agora fazer com que os impostos ICPP e IKCV possuam suas 
+        # próprias implementações de deve_usar_maxima_taxacao, maxima_taxacao e minima_taxacao
+        if self.deve_usar_maxima_taxacao(orcamento):
+            return self.maxima_taxacao(orcamento)
+        else:
+            return self.minima_taxacao(orcamento)
     #-----------------------------------------------------------------------------------------
 
 #=============================================================================================
