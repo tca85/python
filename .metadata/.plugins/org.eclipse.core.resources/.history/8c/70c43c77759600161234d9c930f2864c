@@ -15,13 +15,9 @@ from abc import ABCMeta, abstractmethod
 '''
  Repare que no padrão Template method a classe mãe controla os filhos. Os filhos preenchem apenas 
  as lacunas da mãe, aquele métodos abstratos, mas a classe mãe está no poder e chama estes métodos dos filhos.
- 
- Esse fato que filhos não ficam mais no controle da execução também é chamado de 
- The Hollywood Principle. Esse princípio diz: “Don't call us, we'll call you”! Ou seja, invés você 
- (os filhos) ficarem chamando a classe pai, o controle é invertido e a classe mãe chama os filhos.
+Esse fato que filhos não ficam mais no controle da execução também é chamado de The Hollywood Principle. Esse princípio diz: “Don't call us, we'll call you”! Ou seja, invés você (os filhos) ficarem chamando a classe pai, o controle é invertido e a classe mãe chama os filhos.
 
- A ideia de inverter o controle (IoC - Inversion of Control) vai muito mais longe e 
- não é usado apenas no Template Method
+A ideia de inverter o controle (IoC - Inversion of Control) vai muito mais longe e não é usado apenas no Template Method
 '''
 class Template_de_imposto_condicional(object):
     
@@ -80,11 +76,16 @@ class ISS(object):
   Regras parecidas podem vim de um 'molde', certo? Por isso criamos a classe abstrata
   Template_de_imposto_condicional, e fazemos ICPP e IKCV herdarem dela.
   
+  Precisamos implementar todos métodos abstratos nas classes filhas, ou seja,
+  deve_usar_maxima_taxacao, maxima_taxacao e minima_taxacao
+  Outro detalhe importante: a assinatura tem que ser igual ao da classe pai, Template_de_imposto_condicional
+  
   O método calcula é implementado na classe-pai, e não precisa ser re-escrito.
   
   Perceba que ambas as classes de impostos só implementam as partes "que faltam" do algoritmo.
   A classe Template_de_imposto_condicional possui um método que funciona como um template, 
   ou seja, um molde, para as classes filhas. Daí o nome do padrão de projeto: Template Method.
+  
 '''
 
 class ICPP(Template_de_imposto_condicional):
