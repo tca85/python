@@ -30,7 +30,6 @@ class Template_de_imposto_condicional(object):
             return self.maxima_taxacao(orcamento)
         else:
             return self.minima_taxacao(orcamento)
-
     #-----------------------------------------------------------------------------------------
     @abstractmethod
     def deve_usar_maxima_taxacao(self, orcamento): pass

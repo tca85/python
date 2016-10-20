@@ -17,9 +17,6 @@ from abc import ABCMeta, abstractmethod
 '''
 class Template_de_imposto_condicional(object):
     
-    # atributo que define que essa é uma classe abstrata
-    __metaclass__ = ABCMeta
-    
     #-----------------------------------------------------------------------------------------
     def calcula(self, orcamento):
         
@@ -30,17 +27,13 @@ class Template_de_imposto_condicional(object):
             return self.maxima_taxacao(orcamento)
         else:
             return self.minima_taxacao(orcamento)
-
     #-----------------------------------------------------------------------------------------
-    @abstractmethod
-    def deve_usar_maxima_taxacao(self, orcamento): pass
     #-----------------------------------------------------------------------------------------
-    @abstractmethod
-    def maxima_taxacao(self, orcamento): pass    
     #-----------------------------------------------------------------------------------------
-    @abstractmethod
-    def minima_taxacao(self, orcamento): pass    
     #-----------------------------------------------------------------------------------------
+    #-----------------------------------------------------------------------------------------
+    #-----------------------------------------------------------------------------------------
+    
 
 #=============================================================================================
 class ICMS(object):

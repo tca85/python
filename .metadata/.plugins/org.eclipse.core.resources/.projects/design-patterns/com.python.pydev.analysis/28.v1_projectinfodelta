@@ -1,0 +1,13 @@
+INSTUPimpostos
+/home/tca85/Github/python/design-patterns/impostos.py
+INFOS:&&1|1|2|0&&3|3|2|1&&2|4|2|1&&2|5|2|1&&1|6|2|0&&2|4|2|6&&1|7|2|0&&2|4|2|7&&1|8|2|0&&2|4|2|8&&1|9|2|0&&2|4|2|9&&2|10|2|9
+ICMS=6
+Template_de_imposto_condicional=1
+IKCV=9
+__metaclass__=3
+ISS=7
+ICPP=8
+calcula=4
+impostos=2
+__tem_item_maior_que_100_reais=10
+deve_usar_maxima_taxacao=5
