@@ -1,8 +1,10 @@
-INSTUPcalculador_de_descontos
-/home/tca85/Github/python/design-patterns/calculador_de_descontos.py
-INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|0&&3|2|2|0&&3|5|2|0
-orcamento=4
-desconto=5
-calculador_de_descontos=2
+INSTUPimpostos
+/home/tca85/Github/python/design-patterns/impostos.py
+INFOS:&&1|1|2|0&&2|3|2|1&&1|4|2|0&&2|3|2|4&&1|5|2|0&&2|3|2|5&&1|6|2|0&&2|3|2|6&&2|7|2|6
+ICMS=1
+IKCV=6
+ISS=4
+ICPP=5
 calcula=3
-Calculador_de_descontos=1
+impostos=2
+__tem_item_maior_que_100_reais=7
