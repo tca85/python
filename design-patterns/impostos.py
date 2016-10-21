@@ -13,6 +13,26 @@ from abc import ABCMeta, abstractmethod
 
 #=============================================================================================
 '''
+ Todos os impostos podem receber outros impostos. Podemos explicitar isso através de 
+ construtores na classe Imposto. No lugar de alterar cada uma de nossas classes de 
+ imposto para suportar um novo imposto em seu construtor, podemos criar uma classe abstrata
+ com o construtor que temos interesse, inclusive podemos também tornar o método calcular abstrato,
+ assim, ninguém poderá se esquecer de implementá-lo nas classes filhas
+'''
+class Imposto(object):
+    __metaclass__ = ABCMeta
+    
+    #-----------------------------------------------------------------------------------------
+    def __init__(self, outro_imposto=None):
+        self.__outro_imposto = outro_imposto
+    #-----------------------------------------------------------------------------------------
+    @abstractmethod
+    def calcula(self, orcamento):
+        pass
+    #-----------------------------------------------------------------------------------------
+
+#=============================================================================================
+'''
  Repare que no padrão Template method a classe mãe controla os filhos. Os filhos preenchem apenas 
  as lacunas da mãe, aquele métodos abstratos, mas a classe mãe está no poder e chama estes métodos dos filhos.
  

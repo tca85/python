@@ -1,1 +1,16 @@
-DELSTRimpostos
+INSTUPimpostos
+/home/tca85/Github/python/design-patterns/impostos.py
+INFOS:&&1|1|2|0&&3|3|2|1&&1|4|2|0&&3|3|2|4&&2|5|2|4&&2|6|2|4&&2|7|2|4&&2|8|2|4&&1|9|2|0&&2|5|2|9&&1|10|2|0&&2|5|2|10&&1|11|2|0&&2|6|2|11&&2|7|2|11&&2|8|2|11&&1|12|2|0&&2|6|2|12&&2|7|2|12&&2|8|2|12&&2|13|2|12
+ICMS=9
+Template_de_imposto_condicional=4
+__metaclass__=3
+ISS=10
+Imposto=1
+minima_taxacao=8
+IKCV=12
+ICPP=11
+calcula=5
+impostos=2
+__tem_item_maior_que_100_reais=13
+maxima_taxacao=7
+deve_usar_maxima_taxacao=6
