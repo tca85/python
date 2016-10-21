@@ -29,10 +29,7 @@ class Imposto(object):
     @abstractmethod
     def calcula(self, orcamento): pass
     #-----------------------------------------------------------------------------------------
-    # Esse método será o mesmo em todos os impostos, por isso não é abstrato
     def calculo_do_outro_imposto(self, orcamento):
-        return self.__outro_imposto.calcula(orcamento)
-    #-----------------------------------------------------------------------------------------
 
 #=============================================================================================
 '''

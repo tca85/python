@@ -29,10 +29,6 @@ class Imposto(object):
     @abstractmethod
     def calcula(self, orcamento): pass
     #-----------------------------------------------------------------------------------------
-    # Esse método será o mesmo em todos os impostos, por isso não é abstrato
-    def calculo_do_outro_imposto(self, orcamento):
-        return self.__outro_imposto.calcula(orcamento)
-    #-----------------------------------------------------------------------------------------
 
 #=============================================================================================
 '''
@@ -83,7 +79,7 @@ class ICMS(Imposto):
     
     #-----------------------------------------------------------------------------------------
     def calcula(self, orcamento):
-        return orcamento.valor * 0.1 + self.calculo_do_outro_imposto(orcamento)
+        return orcamento.valor * 0.1
     #-----------------------------------------------------------------------------------------
 
 #=============================================================================================
@@ -91,7 +87,7 @@ class ISS(Imposto):
     
     #-----------------------------------------------------------------------------------------
     def calcula(self, orcamento):
-        return orcamento.valor * 0.06 + self.calculo_do_outro_imposto(orcamento)
+        return orcamento.valor * 0.06
     #-----------------------------------------------------------------------------------------
 #=============================================================================================
 
