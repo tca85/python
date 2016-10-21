@@ -39,30 +39,7 @@ class Calculador_de_impostos(object):
      precisar alterar o seu código.
     '''
     def realiza_calculo(self, orcamento, imposto):
-        print imposto.calcula(orcamento)
+        return imposto.calcula(orcamento)
                
     #-----------------------------------------------------------------------------------------
-#=============================================================================================    
-    
-'''
- A chamada da função main está sendo feita aqui para evitar criar uma classe para testar
-'''
-if __name__ == '__main__':
-    from orcamento import Orcamento, Item
-    from impostos import ICMS, ISS, ICPP, IKCV
-      
-    orcamento = Orcamento()
-    
-    orcamento.adiciona_item(Item('Item 1', 500.0))
-        
-    calculador_de_impostos = Calculador_de_impostos()
-    
-    print 'ISS e ICMS'
-    calculador_de_impostos.realiza_calculo(orcamento, ISS())
-    calculador_de_impostos.realiza_calculo(orcamento, ICMS())
-    
-    print 'ICPP e IKCV'
-    calculador_de_impostos.realiza_calculo(orcamento, ICPP())
-    calculador_de_impostos.realiza_calculo(orcamento, IKCV())
-    
-#-----------------------------------------------------------------------------------------
+#=============================================================================================
