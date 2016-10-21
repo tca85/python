@@ -31,13 +31,7 @@ class Imposto(object):
     #-----------------------------------------------------------------------------------------
     # Esse método será o mesmo em todos os impostos, por isso não é abstrato
     def calculo_do_outro_imposto(self, orcamento):
-        
-        # Existirem mais impostos a serem calculados? O outro_imposto será nulo? 
-        # Devemos permitir que um imposto não tenha mais um próximo imposto a ser calculado
-        if(self.__outro_imposto is None):
-            return 0
-        else:       
-            return self.__outro_imposto.calcula(orcamento)
+        return self.__outro_imposto.calcula(orcamento)
     #-----------------------------------------------------------------------------------------
 
 #=============================================================================================
