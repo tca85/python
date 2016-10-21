@@ -17,8 +17,7 @@ from abc import ABCMeta, abstractmethod
  utilizando programação funcional
  
  Desvantagem:
-  O problema é que essa solução será sempre aplicada, pois o decorator estará sempre no método
-  da classe que o está usando (nesse caso ISS)
+  O problema é que essa solução será sempre aplicada, pois o decorator estará sempre na classe ISS
 '''
 def Decorator_do_Python(metodo_ou_funcao):
     

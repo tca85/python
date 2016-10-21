@@ -15,10 +15,6 @@ from abc import ABCMeta, abstractmethod
 '''
  O Python permite a decoração de funções e métodos também utilizando um recurso de linguagem,
  utilizando programação funcional
- 
- Desvantagem:
-  O problema é que essa solução será sempre aplicada, pois o decorator estará sempre no método
-  da classe que o está usando (nesse caso ISS)
 '''
 def Decorator_do_Python(metodo_ou_funcao):
     
