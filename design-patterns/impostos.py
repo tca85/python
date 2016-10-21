@@ -13,6 +13,25 @@ from abc import ABCMeta, abstractmethod
 
 #=============================================================================================
 '''
+ O Python permite a decoração de funções e métodos também utilizando um recurso de linguagem,
+ utilizando programação funcional
+'''
+def Decorator_do_Python(metodo_ou_funcao):
+    
+    #-----------------------------------------------------------------------------------------
+    '''
+     Nosso decorator precisa empacotar o metodo_ou_funcao. Vamos declará-la com o nome wrapper(empacotador)
+     self será o da classe ISS, que está utilizando esse decorator
+     
+     Nesse exemplo estamos somando 50 ao valor.
+    '''
+    def wrapper(self, orcamento):
+        return metodo_ou_funcao(self, orcamento) + 50.0
+    return wrapper
+    #-----------------------------------------------------------------------------------------
+
+#=============================================================================================
+'''
  Todos os impostos podem receber outros impostos. Podemos explicitar isso através de 
  construtores na classe Imposto. No lugar de alterar cada uma de nossas classes de 
  imposto para suportar um novo imposto em seu construtor, podemos criar uma classe abstrata
@@ -101,6 +120,7 @@ class ICMS(Imposto):
 class ISS(Imposto):
     
     #-----------------------------------------------------------------------------------------
+    @Decorator_do_Python
     def calcula(self, orcamento):
         return orcamento.valor * 0.06 + self.calculo_do_outro_imposto(orcamento)
     #-----------------------------------------------------------------------------------------
