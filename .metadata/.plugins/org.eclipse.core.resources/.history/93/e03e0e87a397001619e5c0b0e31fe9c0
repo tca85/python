@@ -42,7 +42,7 @@ class Imposto(object):
  A ideia de inverter o controle (IoC - Inversion of Control) vai muito mais longe e 
  não é usado apenas no Template Method
 '''
-class Template_de_imposto_condicional(Imposto):
+class Template_de_imposto_condicional(object):
     
     # atributo que define que essa é uma classe abstrata
     __metaclass__ = ABCMeta
@@ -75,7 +75,7 @@ class Template_de_imposto_condicional(Imposto):
     #-----------------------------------------------------------------------------------------
 
 #=============================================================================================
-class ICMS(Imposto):
+class ICMS(object):
     
     #-----------------------------------------------------------------------------------------
     def calcula(self, orcamento):
@@ -83,7 +83,7 @@ class ICMS(Imposto):
     #-----------------------------------------------------------------------------------------
 
 #=============================================================================================
-class ISS(Imposto):
+class ISS(object):
     
     #-----------------------------------------------------------------------------------------
     def calcula(self, orcamento):
