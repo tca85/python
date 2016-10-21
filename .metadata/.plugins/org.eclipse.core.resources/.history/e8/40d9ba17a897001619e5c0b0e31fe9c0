@@ -6,7 +6,7 @@ Created on Oct 21, 2016
 @author: tca85
 '''
 
-from calculador_de_impostos import Calculador_de_impostos
+from imposto import Calculador_de_impostos
 
 #-----------------------------------------------------------------------------------------
 if __name__ == '__main__':
