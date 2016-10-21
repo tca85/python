@@ -23,6 +23,7 @@ from abc import ABCMeta, abstractmethod
  (um Imposto que recebe em seu construtor outro Imposto) para fazerem parte de seu 
  comportamento, de uma maneira que seu uso é definido a partir do que se passou para a instanciação 
  dos objetos, é o que caracteriza o Design Pattern chamado Decorator.
+ 
 '''
 class Imposto(object):
     __metaclass__ = ABCMeta

@@ -18,11 +18,6 @@ from abc import ABCMeta, abstractmethod
  imposto para suportar um novo imposto em seu construtor, podemos criar uma classe abstrata
  com o construtor que temos interesse, inclusive podemos também tornar o método calcular abstrato,
  assim, ninguém poderá se esquecer de implementá-lo nas classes filhas
- 
- Quando compomos comportamento, através de classes que recebem objetos do mesmo tipo que elas mesmas 
- (um Imposto que recebe em seu construtor outro Imposto) para fazerem parte de seu 
- comportamento, de uma maneira que seu uso é definido a partir do que se passou para a instanciação 
- dos objetos, é o que caracteriza o Design Pattern chamado Decorator.
 '''
 class Imposto(object):
     __metaclass__ = ABCMeta
@@ -69,9 +64,9 @@ class Template_de_imposto_condicional(Imposto):
         # próprias implementações de deve_usar_maxima_taxacao, maxima_taxacao e minima_taxacao
         # ou seja, esses métodos são "buracos" e devem ser implementados por classes-filhas
         if self.deve_usar_maxima_taxacao(orcamento):
-            return self.maxima_taxacao(orcamento) + self.calculo_do_outro_imposto(orcamento)
+            return self.maxima_taxacao(orcamento)
         else:
-            return self.minima_taxacao(orcamento) + self.calculo_do_outro_imposto(orcamento)
+            return self.minima_taxacao(orcamento)
 
     '''
      Como o método abstrato nada faz e aguarda sua implementação por uma classe filha, precisamos 
