@@ -7,7 +7,6 @@ Se o orçamento atende a regra de um desconto, o mesmo já calcula o desconto.
 Caso contrário, ele passa para o "próximo" desconto, qualquer que seja esse próximo desconto,
 ou seja, uma cadeia de descontos
 
-
 Chain of Responsibility
 Esses descontos formam como se fosse uma "corrente", ou seja, um ligado ao outro. 
 Daí o nome do padrão de projeto: Chain of Responsibility. A ideia do padrão é 
@@ -21,6 +20,9 @@ Cada "estratégia" também possui a responsabilidade de descobrir se ela deve se
 caso não aplique, delegar para a próxima. 
 Por isso tem nas classes como Desconto_por_cinco_itens aquele "if", e por isso ela deve 
 saber do próximo
+
+A intenção do Chain of Responsabilidade não é dividir a responsabilidade em fatias menores 
+e sim criar uma cadeia de decisão onde cada objeto representa uma responsabilidade.
 
 @author: tca85
 '''

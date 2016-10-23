@@ -46,6 +46,9 @@ def Decorator_do_Python(metodo_ou_funcao):
  (um Imposto que recebe em seu construtor outro Imposto) para fazerem parte de seu 
  comportamento, de uma maneira que seu uso é definido a partir do que se passou para a instanciação 
  dos objetos, é o que caracteriza o Design Pattern chamado Decorator.
+ 
+ O Decorator é para compor e dividir comportamento em fatias onde cada fatia (objeto) representa 
+ uma parte da responsabilidade. Os Decorators modificam/melhoram o comportamento original.
 '''
 class Imposto(object):
     __metaclass__ = ABCMeta
