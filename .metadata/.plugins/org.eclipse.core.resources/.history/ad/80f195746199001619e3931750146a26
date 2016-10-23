@@ -71,11 +71,8 @@ class Reprovado(Estado_de_um_orcamento):
 #=============================================================================================
 
 class Finalizado(Estado_de_um_orcamento):
-    
-    #-----------------------------------------------------------------------------------------
     def aplica_desconto_extra(self, orcamento):
         raise Exception('Orcamentos finalizados não recebem desconto extra')
-    #-----------------------------------------------------------------------------------------
 
 #=============================================================================================
 class Orcamento(object):

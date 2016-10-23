@@ -1,7 +1,6 @@
 -- VERSION_4
 -- START DISKCACHE_2
 /home/tca85/Github/python/.metadata/.plugins/org.eclipse.core.resources/.projects/design-patterns/com.python.pydev.analysis/v2_indexcache
-orcamento|1476841494000000000|/home/tca85/Github/python/design-patterns/orcamento.py
 descontos|1477067442000000000|/home/tca85/Github/python/design-patterns/descontos.py
 calculador_de_impostos|1477065505000000000|/home/tca85/Github/python/design-patterns/calculador_de_impostos.py
 testar_impostos|1477066157000000000|/home/tca85/Github/python/design-patterns/testar_impostos.py
@@ -9,64 +8,65 @@ calculador_de_descontos|1476843050000000000|/home/tca85/Github/python/design-pat
 impostos|1477067398000000000|/home/tca85/Github/python/design-patterns/impostos.py
 -- END DISKCACHE
 -- START DICTIONARY
-24
-6=orcamento
-19=ICMS
-22=Sem_desconto
+19
+14=ICMS
+17=Sem_desconto
 2=calculador_de_impostos
-13=Template_de_imposto_condicional
-18=Desconto_por_mais_de_quinhentos_reais.__init__
-20=ISS
+9=Template_de_imposto_condicional
+13=Desconto_por_mais_de_quinhentos_reais.__init__
+15=ISS
 1=calculador_de_descontos
-15=Imposto.__init__
-12=Imposto
-11=Item
-9=Orcamento.__init__
-10=Orcamento
+10=Imposto.__init__
+8=Imposto
 4=descontos
-7=Desconto_por_cinco_itens
-16=IKCV
+6=Desconto_por_cinco_itens
+11=IKCV
 5=testar_impostos
-8=Desconto_por_mais_de_quinhentos_reais
-14=Item.__init__
-23=ICPP
-17=Desconto_por_cinco_itens.__init__
+7=Desconto_por_mais_de_quinhentos_reais
+18=ICPP
+12=Desconto_por_cinco_itens.__init__
 3=impostos
-21=Calculador_de_descontos
-24=Calculador_de_impostos
+16=Calculador_de_descontos
+19=Calculador_de_impostos
 -- END DICTIONARY
 -- START TREE 1
-12
+17
+apr|0|
 cal|3|Calculador_de_descontos!9@calculador_de_descontos!11@Calculador_de_impostos!17@
 dec|1|Decorator_do_Python!26@
 des|3|Desconto_por_mais_de_quinhentos_reais!33@desconto!11@Desconto_por_cinco_itens!33@
+em_|0|
+est|0|
+fin|0|
 icm|1|ICMS!25@
 icp|1|ICPP!25@
 ikc|1|IKCV!25@
 imp|2|imposto!43@Imposto!25@
 iss|1|ISS!25@
-ite|1|Item!49@
-orc|3|Orcamento!49@orcamento!43@orcamento!11@
+ite|0|
+orc|2|orcamento!43@orcamento!11@
+rep|0|
 sem|1|Sem_desconto!33@
 tem|1|Template_de_imposto_condicional!25@
 -- END TREE
 -- START TREE 2
-17
-__i|6|__init__!7&34@__init__!8&34@__itens!9&51@__init__!10&50@__init__!11&50@__init__!12&26@
-__m|2|__metaclass__!12&27@__metaclass__!13&27@
-__n|1|__nome!14&51@
-__o|1|__outro_imposto!15&27@
-__t|1|__tem_item_maior_que_100_reais!16&26@
-__v|1|__valor!14&51@
-_pr|2|_proximo_desconto!17&35@_proximo_desconto!18&35@
-adi|1|adiciona_item!10&50@
-cal|9|calcula!12&26@calcula!13&26@calcula!19&26@calcula!20&26@calcula!21&10@calculo_do_outro_imposto!12&26@calcular!7&34@calcular!8&34@calcular!22&34@
-dev|3|deve_usar_maxima_taxacao!13&26@deve_usar_maxima_taxacao!23&26@deve_usar_maxima_taxacao!16&26@
-max|3|maxima_taxacao!13&26@maxima_taxacao!23&26@maxima_taxacao!16&26@
-min|3|minima_taxacao!13&26@minima_taxacao!23&26@minima_taxacao!16&26@
-nom|1|nome!11&50@
-obt|1|obter_itens!10&50@
-rea|1|realiza_calculo!24&18@
-tot|1|total_itens!10&50@
-val|2|valor!10&50@valor!11&50@
+18
+__i|3|__init__!6&34@__init__!7&34@__init__!8&26@
+__m|2|__metaclass__!8&27@__metaclass__!9&27@
+__n|0|
+__o|1|__outro_imposto!10&27@
+__t|1|__tem_item_maior_que_100_reais!11&26@
+__v|0|
+_pr|2|_proximo_desconto!12&35@_proximo_desconto!13&35@
+adi|0|
+apl|0|
+cal|9|calcula!8&26@calcula!9&26@calcula!14&26@calcula!15&26@calcula!16&10@calculo_do_outro_imposto!8&26@calcular!6&34@calcular!7&34@calcular!17&34@
+dev|3|deve_usar_maxima_taxacao!9&26@deve_usar_maxima_taxacao!18&26@deve_usar_maxima_taxacao!11&26@
+max|3|maxima_taxacao!9&26@maxima_taxacao!18&26@maxima_taxacao!11&26@
+min|3|minima_taxacao!9&26@minima_taxacao!18&26@minima_taxacao!11&26@
+nom|0|
+obt|0|
+rea|1|realiza_calculo!19&18@
+tot|0|
+val|0|
 -- END TREE
