@@ -17,6 +17,7 @@ if __name__ == '__main__':
     orcamento.adiciona_item(Item('Item C', 400.0))
     
     orcamento.aplica_desconto_extra()
+    orcamento.aplica_desconto_extra()
     print orcamento.valor
     orcamento.aprova()
     
